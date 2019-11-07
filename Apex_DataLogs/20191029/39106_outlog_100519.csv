@@ -1,0 +1,4305 @@
+"<?xml version=""1.0""?>"
+"<outlog software=""5.05_9B19"" hardware=""1.0"">"
+<hostname>apex_39106</hostname>
+<serial>AC5:39106</serial>
+<timezone>-7.00</timezone>
+<record><date>10/05/2019 03:10:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/05/2019 03:10:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/05/2019 03:10:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/05/2019 03:10:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/05/2019 03:10:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/05/2019 06:51:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/05/2019 06:51:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/05/2019 06:51:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/05/2019 06:51:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/05/2019 06:51:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/05/2019 16:09:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/05/2019 16:09:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/05/2019 16:09:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/05/2019 16:09:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/05/2019 16:09:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/05/2019 18:33:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/05/2019 18:33:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/05/2019 18:33:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/05/2019 18:33:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/05/2019 18:33:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/06/2019 03:59:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/06/2019 03:59:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/06/2019 03:59:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/06/2019 03:59:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/06/2019 03:59:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/06/2019 06:52:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/06/2019 06:52:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/06/2019 06:52:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/06/2019 06:52:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/06/2019 06:52:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/06/2019 16:58:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/06/2019 16:58:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/06/2019 16:58:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/06/2019 16:58:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/06/2019 16:58:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/06/2019 18:32:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/06/2019 18:32:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/06/2019 18:32:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/06/2019 18:32:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/06/2019 18:32:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/07/2019 04:47:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/07/2019 04:47:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/07/2019 04:47:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/07/2019 04:47:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/07/2019 04:47:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/07/2019 06:52:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/07/2019 06:52:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/07/2019 06:52:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/07/2019 06:52:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/07/2019 06:52:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/07/2019 15:49:07</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/07/2019 15:49:07</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/07/2019 15:49:07</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/07/2019 15:49:07</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/07/2019 15:49:07</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/07/2019 15:49:07</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/07/2019 15:49:07</date>
+<name>LIGHT-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/07/2019 15:49:07</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/07/2019 15:49:07</date>
+<name>LIGHT-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/07/2019 17:46:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/07/2019 17:46:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/07/2019 17:46:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/07/2019 17:46:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/07/2019 17:46:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/07/2019 18:30:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/07/2019 18:30:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/07/2019 18:30:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/07/2019 18:30:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/07/2019 18:30:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/08/2019 05:36:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/08/2019 05:36:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/08/2019 05:36:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/08/2019 05:36:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/08/2019 05:36:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/08/2019 06:53:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/08/2019 06:53:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/08/2019 06:53:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/08/2019 06:53:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/08/2019 06:53:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/08/2019 18:29:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/08/2019 18:29:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/08/2019 18:29:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/08/2019 18:29:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/08/2019 18:29:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/08/2019 18:35:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/08/2019 18:35:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/08/2019 18:35:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/08/2019 18:35:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/08/2019 18:35:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/09/2019 06:25:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 06:25:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 06:25:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 06:25:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 06:25:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 06:54:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/09/2019 06:54:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/09/2019 06:54:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/09/2019 06:54:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/09/2019 06:54:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/09/2019 13:40:59</date>
+<name>LIGHT-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 13:41:20</date>
+<name>LIGHT-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/09/2019 13:41:34</date>
+<name>LIGHT-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 13:42:10</date>
+<name>LIGHT-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/09/2019 14:26:03</date>
+<name>SOL-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 14:26:05</date>
+<name>LIGHT-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 14:26:21</date>
+<name>SOL-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 15:29:52</date>
+<name>LIGHT-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 15:29:56</date>
+<name>LIGHT-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/09/2019 18:28:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 18:28:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 18:28:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 18:28:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 18:28:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/09/2019 19:24:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/09/2019 19:24:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/09/2019 19:24:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/09/2019 19:24:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/09/2019 19:24:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/10/2019 06:55:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/10/2019 06:55:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/10/2019 06:55:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/10/2019 06:55:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/10/2019 06:55:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/10/2019 07:14:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/10/2019 07:14:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/10/2019 07:14:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/10/2019 07:14:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/10/2019 07:14:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/10/2019 14:41:56</date>
+<name>LIGHT-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/10/2019 18:27:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/10/2019 18:27:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/10/2019 18:27:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/10/2019 18:27:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/10/2019 18:27:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/10/2019 20:13:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/10/2019 20:13:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/10/2019 20:13:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/10/2019 20:13:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/10/2019 20:13:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/11/2019 06:56:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/11/2019 06:56:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/11/2019 06:56:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/11/2019 06:56:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/11/2019 06:56:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/11/2019 08:03:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/11/2019 08:03:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/11/2019 08:03:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/11/2019 08:03:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/11/2019 08:03:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/11/2019 18:26:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/11/2019 18:26:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/11/2019 18:26:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/11/2019 18:26:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/11/2019 18:26:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/11/2019 21:02:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/11/2019 21:02:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/11/2019 21:02:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/11/2019 21:02:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/11/2019 21:02:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/12/2019 06:56:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/12/2019 06:56:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/12/2019 06:56:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/12/2019 06:56:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/12/2019 06:56:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/12/2019 08:51:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/12/2019 08:51:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/12/2019 08:51:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/12/2019 08:51:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/12/2019 08:51:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/12/2019 18:24:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/12/2019 18:24:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/12/2019 18:24:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/12/2019 18:24:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/12/2019 18:24:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/12/2019 21:50:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/12/2019 21:50:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/12/2019 21:50:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/12/2019 21:50:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/12/2019 21:50:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/13/2019 06:57:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/13/2019 06:57:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/13/2019 06:57:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/13/2019 06:57:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/13/2019 06:57:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/13/2019 09:40:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/13/2019 09:40:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/13/2019 09:40:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/13/2019 09:40:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/13/2019 09:40:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/13/2019 18:23:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/13/2019 18:23:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/13/2019 18:23:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/13/2019 18:23:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/13/2019 18:23:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/13/2019 22:39:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/13/2019 22:39:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/13/2019 22:39:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/13/2019 22:39:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/13/2019 22:39:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/14/2019 06:58:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/14/2019 06:58:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/14/2019 06:58:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/14/2019 06:58:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/14/2019 06:58:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/14/2019 10:29:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/14/2019 10:29:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/14/2019 10:29:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/14/2019 10:29:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/14/2019 10:29:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/14/2019 18:22:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/14/2019 18:22:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/14/2019 18:22:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/14/2019 18:22:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/14/2019 18:22:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/14/2019 23:28:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/14/2019 23:28:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/14/2019 23:28:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/14/2019 23:28:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/14/2019 23:28:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/15/2019 06:59:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/15/2019 06:59:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/15/2019 06:59:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/15/2019 06:59:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/15/2019 06:59:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/15/2019 11:18:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/15/2019 11:18:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/15/2019 11:18:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/15/2019 11:18:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/15/2019 11:18:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/15/2019 18:21:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/15/2019 18:21:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/15/2019 18:21:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/15/2019 18:21:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/15/2019 18:21:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 00:17:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/16/2019 00:17:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/16/2019 00:17:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/16/2019 00:17:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/16/2019 00:17:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/16/2019 00:40:58</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 00:40:58</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 00:40:58</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 00:40:58</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 00:40:58</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 01:06:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/16/2019 01:06:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/16/2019 01:06:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/16/2019 01:06:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/16/2019 01:06:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/16/2019 07:00:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/16/2019 07:00:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/16/2019 07:00:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/16/2019 07:00:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/16/2019 07:00:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/16/2019 12:07:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 12:07:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 12:07:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 12:07:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 12:07:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 18:20:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 18:20:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 18:20:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 18:20:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/16/2019 18:20:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 01:54:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 01:54:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 01:54:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 01:54:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 01:54:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/17/2019 07:00:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 07:00:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 07:00:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 07:00:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 07:00:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/17/2019 09:44:21</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 09:44:21</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 09:44:21</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 09:44:21</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 09:44:21</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 09:44:21</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 09:44:21</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 09:44:21</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 09:44:21</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/17/2019 09:44:21</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/17/2019 09:50:23</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 09:50:23</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 09:50:23</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 09:50:23</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 09:50:23</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 09:50:23</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 09:50:23</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 09:50:23</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 09:50:23</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/17/2019 09:50:23</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:15:35</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 10:15:35</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 10:15:35</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 10:15:35</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 10:15:35</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:15:35</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:15:35</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:15:35</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:15:35</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:15:35</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:29:04</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 10:29:04</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 10:29:04</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 10:29:04</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 10:29:04</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:29:04</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:29:04</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:29:04</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:29:04</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:29:04</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:37:36</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 10:37:36</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 10:37:36</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 10:37:36</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 10:37:36</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:37:36</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:37:36</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:37:36</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:37:36</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/17/2019 10:37:36</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/17/2019 12:55:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 12:55:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 12:55:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 12:55:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 12:55:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 13:09:28</date>
+<name>LIGHT-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/17/2019 13:24:34</date>
+<name>LIGHT-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 13:24:42</date>
+<name>LIGHT-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 15:00:00</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:00:00</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:21:03</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 15:21:03</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 15:21:03</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:21:03</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:21:03</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:21:03</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:21:03</date>
+<name>LIGHT-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:21:03</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:23:20</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 15:23:20</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 15:23:20</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:23:20</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:23:20</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:23:20</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:23:20</date>
+<name>LIGHT-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:23:20</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:41:42</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 15:41:42</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 15:41:42</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:41:42</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:41:42</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:41:42</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:41:42</date>
+<name>LIGHT-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/17/2019 15:41:42</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 16:20:12</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 16:20:12</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/17/2019 16:20:12</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/17/2019 16:20:12</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 16:20:12</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/17/2019 16:20:12</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/17/2019 16:20:12</date>
+<name>LIGHT-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/17/2019 16:20:12</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/17/2019 16:45:17</date>
+<name>LIGHT-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 18:18:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 18:18:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 18:18:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 18:18:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 18:18:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 21:15:00</date>
+<name>SOL-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/17/2019 21:15:00</date>
+<name>SOL-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 02:43:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/18/2019 02:43:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/18/2019 02:43:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/18/2019 02:43:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/18/2019 02:43:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/18/2019 03:30:00</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/18/2019 03:30:00</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/18/2019 07:01:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/18/2019 07:01:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/18/2019 07:01:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/18/2019 07:01:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/18/2019 07:01:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/18/2019 09:45:00</date>
+<name>SOL-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 09:45:00</date>
+<name>SOL-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 13:44:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 13:44:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 13:44:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 13:44:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 13:44:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 14:34:43</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/18/2019 14:34:43</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/18/2019 14:34:43</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/18/2019 14:34:43</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/18/2019 14:34:43</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/18/2019 16:00:00</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/18/2019 16:00:00</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/18/2019 18:17:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 18:17:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 18:17:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 18:17:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 18:17:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 22:15:00</date>
+<name>SOL-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/18/2019 22:15:00</date>
+<name>SOL-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 03:32:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/19/2019 03:32:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/19/2019 03:32:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/19/2019 03:32:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/19/2019 03:32:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/19/2019 04:30:00</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/19/2019 04:30:00</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/19/2019 07:02:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/19/2019 07:02:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/19/2019 07:02:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/19/2019 07:02:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/19/2019 07:02:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/19/2019 10:45:00</date>
+<name>SOL-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 10:45:00</date>
+<name>SOL-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 14:33:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 14:33:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 14:33:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 14:33:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 14:33:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 17:00:00</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/19/2019 17:00:00</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/19/2019 18:16:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 18:16:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 18:16:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 18:16:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 18:16:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 23:15:00</date>
+<name>SOL-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/19/2019 23:15:00</date>
+<name>SOL-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/20/2019 04:21:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/20/2019 04:21:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/20/2019 04:21:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/20/2019 04:21:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/20/2019 04:21:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/20/2019 05:30:00</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/20/2019 05:30:00</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/20/2019 07:03:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/20/2019 07:03:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/20/2019 07:03:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/20/2019 07:03:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/20/2019 07:03:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/20/2019 11:45:00</date>
+<name>SOL-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/20/2019 11:45:00</date>
+<name>SOL-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/20/2019 15:22:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/20/2019 15:22:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/20/2019 15:22:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/20/2019 15:22:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/20/2019 15:22:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/20/2019 18:00:00</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/20/2019 18:00:00</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/20/2019 18:15:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/20/2019 18:15:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/20/2019 18:15:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/20/2019 18:15:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/20/2019 18:15:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 00:15:00</date>
+<name>SOL-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 00:15:00</date>
+<name>SOL-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 05:10:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 05:10:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 05:10:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 05:10:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 05:10:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 06:30:00</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 06:30:00</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 07:04:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 07:04:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 07:04:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 07:04:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 07:04:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 12:45:00</date>
+<name>SOL-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 12:45:00</date>
+<name>SOL-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 13:32:13</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:32:16</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:45:27</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:45:27</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:45:27</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:45:27</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:45:27</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:45:27</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:45:27</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:45:27</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:45:27</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:45:27</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:45:27</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:45:27</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:51:39</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:51:39</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:51:39</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:51:39</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:51:39</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:51:39</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:51:39</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:51:39</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:51:39</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:51:39</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:51:39</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:51:39</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:54:26</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:54:26</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:54:26</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:54:26</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:54:26</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:54:26</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:54:26</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:54:26</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:54:26</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:54:26</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:54:26</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:54:26</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:56:29</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:56:29</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:56:29</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:56:29</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:56:29</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:56:29</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:56:29</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:56:29</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:56:29</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:56:29</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:56:29</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:56:29</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:59:35</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:59:35</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:59:35</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:59:35</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 13:59:35</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:59:35</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:59:35</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:59:35</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:59:35</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:59:35</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:59:35</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 13:59:35</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:06:59</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:06:59</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:06:59</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:06:59</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:06:59</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:06:59</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:06:59</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:06:59</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:06:59</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:06:59</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:06:59</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:06:59</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:08:28</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:08:28</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:08:28</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:08:28</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:08:28</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:08:28</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:08:28</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:08:28</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:08:28</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:08:28</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:08:28</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:08:28</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:11:55</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:11:55</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:11:55</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:11:55</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:11:55</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:11:55</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:11:55</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:11:55</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:11:55</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:11:55</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:11:55</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:11:55</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:17:10</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:17:10</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:17:10</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:17:10</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:17:10</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:17:10</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:17:10</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:17:10</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:17:10</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:17:10</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:17:10</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:17:10</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:25:49</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:25:49</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:25:49</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:25:49</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:25:49</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:25:49</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:25:49</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:25:49</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:25:49</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:25:49</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:25:49</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:25:49</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:29:22</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:29:22</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:29:22</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:29:22</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:29:22</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:29:22</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:29:22</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:29:22</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:29:22</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:29:22</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:29:22</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:29:22</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:34:25</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:34:25</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:34:25</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:34:25</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:34:25</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:34:25</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:34:25</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:34:25</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:34:25</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:34:25</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:34:25</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:34:25</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:35:54</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:35:54</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:35:54</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:35:54</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:35:54</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:35:54</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:35:54</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:35:54</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:35:54</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:35:54</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:35:54</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:35:54</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:48:55</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:48:55</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:48:55</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:48:55</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:48:55</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:48:55</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:48:55</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:48:55</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:48:55</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:48:55</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:48:55</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:48:55</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:53:24</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:53:24</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:53:24</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:53:24</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:53:24</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:53:24</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:53:24</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:53:24</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:53:24</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:53:24</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:53:24</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:53:24</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:54:09</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:54:09</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:54:09</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:54:09</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:54:09</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:54:09</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:54:09</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:54:09</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:54:09</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:54:09</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:54:09</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:54:09</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:57:34</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:57:34</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:57:34</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:57:34</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 14:57:34</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:57:34</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:57:34</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:57:34</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:57:34</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:57:34</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:57:34</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 14:57:34</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:13:27</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:13:27</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:13:27</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:13:27</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:13:27</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:13:27</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:13:27</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:13:27</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:13:27</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:13:27</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:13:27</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:13:27</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:16:17</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:16:17</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:16:17</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:16:17</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:16:17</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:16:17</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:16:17</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:16:17</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:16:17</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:16:17</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:16:17</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:16:17</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:20:34</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:20:34</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:20:34</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:20:34</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:20:34</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:20:34</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:20:34</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:20:34</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:20:34</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:20:34</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:20:34</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:20:34</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:32:32</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:32:32</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:32:32</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:32:32</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:32:32</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:32:32</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:32:32</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:32:32</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:32:32</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:32:32</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:32:32</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:32:32</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:35:57</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:35:57</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:35:57</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:35:57</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:35:57</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:35:57</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:35:57</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:35:57</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:35:57</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:35:57</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:35:57</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:35:57</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:37:16</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:37:16</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:37:16</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:37:16</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:37:16</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:37:16</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:37:16</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:37:16</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:37:16</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:37:16</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:37:16</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:37:16</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:55:56</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:55:56</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:55:56</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:55:56</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:55:56</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:55:56</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:55:56</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:55:56</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:55:56</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:55:56</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:55:56</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:55:56</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:57:40</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:57:40</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:57:40</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:57:40</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 15:57:40</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:57:40</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:57:40</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:57:40</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:57:40</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:57:40</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:57:40</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 15:57:40</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:03:38</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 16:03:38</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 16:03:38</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 16:03:38</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 16:03:38</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:03:38</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:03:38</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:03:38</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:03:38</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:03:38</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:03:38</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:03:38</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:11:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 16:11:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 16:11:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 16:11:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 16:11:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 16:27:35</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 16:27:35</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 16:27:35</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:27:35</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:27:35</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:27:35</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:27:35</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:29:32</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 16:29:32</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 16:29:32</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:29:32</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:29:32</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:29:32</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:29:32</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:46:49</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 16:46:49</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 16:46:49</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:46:49</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:46:49</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:46:49</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:46:49</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:58:04</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 16:58:04</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/21/2019 16:58:04</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:58:04</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:58:04</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:58:04</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/21/2019 16:58:04</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/21/2019 18:14:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 18:14:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 18:14:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 18:14:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/21/2019 18:14:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/22/2019 05:58:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 05:58:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 05:58:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 05:58:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 05:58:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 07:04:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 07:04:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 07:04:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 07:04:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 07:04:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:48:02</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 11:48:02</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 11:48:02</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 11:48:02</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 11:48:02</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:48:02</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:48:02</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:48:02</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:48:02</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:48:02</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:48:02</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:48:02</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:55:20</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 11:55:20</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 11:55:20</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 11:55:20</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 11:55:20</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:55:20</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:55:20</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:55:20</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:55:20</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:55:20</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:55:20</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 11:55:20</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:07:48</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:07:48</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:07:48</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:07:48</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:07:48</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:07:48</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:07:48</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:07:48</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:07:48</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:07:48</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:07:48</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:07:48</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:18:56</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:18:56</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:18:56</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:18:56</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:18:56</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:18:56</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:18:56</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:18:56</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:18:56</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:18:56</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:18:56</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:18:56</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:27:13</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:27:13</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:27:13</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:27:13</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:27:13</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:27:13</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:27:13</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:27:13</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:27:13</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:27:13</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:27:13</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:27:13</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:35:55</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:35:55</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:35:55</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:35:55</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:35:55</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:35:55</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:35:55</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:35:55</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:35:55</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:35:55</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:35:55</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:35:55</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:43:23</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:43:23</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:43:23</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:43:23</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:43:23</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:43:23</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:43:23</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:43:23</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:43:23</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:43:23</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:43:23</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:43:23</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:56:49</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:56:49</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:56:49</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:56:49</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 12:56:49</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:56:49</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:56:49</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:56:49</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:56:49</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:56:49</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:56:49</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 12:56:49</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:19:18</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:19:18</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:19:18</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:19:18</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:19:18</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:19:18</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:19:18</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:19:18</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:19:18</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:19:18</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:19:18</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:19:18</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:21:45</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:21:45</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:21:45</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:21:45</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:21:45</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:21:45</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:21:45</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:21:45</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:21:45</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:21:45</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:21:45</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:21:45</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:35:30</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:35:30</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:35:30</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:35:30</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:35:30</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:35:30</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:35:30</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:35:30</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:35:30</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:35:30</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:35:30</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:35:30</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:41:42</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:41:42</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:41:42</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:41:42</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:41:42</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:41:42</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:41:42</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:41:42</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:41:42</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:41:42</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:41:42</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:41:42</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:48:36</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:48:36</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:48:36</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:48:36</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:48:36</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:48:36</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:48:36</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:48:36</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:48:36</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:48:36</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:48:36</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:48:36</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:50:47</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:50:47</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:50:47</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:50:47</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:50:47</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:50:47</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:50:47</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:50:47</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:50:47</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:50:47</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:50:47</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:50:47</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:58:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:58:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:58:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:58:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 13:58:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:58:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:58:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:58:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:58:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:58:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:58:00</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 13:58:00</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:09:05</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 14:09:05</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 14:09:05</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 14:09:05</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 14:09:05</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:09:05</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:09:05</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:09:05</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:09:05</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:09:05</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:09:05</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:09:05</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:15:52</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 14:15:52</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 14:15:52</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 14:15:52</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 14:15:52</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:15:52</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:15:52</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:15:52</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:15:52</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:15:52</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:15:52</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:15:52</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:23:22</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 14:23:22</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 14:23:22</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 14:23:22</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 14:23:22</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:23:22</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:23:22</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:23:22</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:23:22</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:23:22</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:23:22</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 14:23:22</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:05:26</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 15:05:26</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 15:05:26</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 15:05:26</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 15:05:26</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:05:26</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:05:26</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:05:26</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:05:26</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:05:26</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:05:26</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:05:26</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:19:30</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 15:19:30</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 15:19:30</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 15:19:30</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 15:19:30</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:19:30</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:19:30</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:19:30</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:19:30</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:19:30</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:19:30</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:19:30</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:31:28</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 15:31:28</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 15:31:28</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 15:31:28</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 15:31:28</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:31:28</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:31:28</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:31:28</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:31:28</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:31:28</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:31:28</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 15:31:28</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:03:07</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 16:03:07</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 16:03:07</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 16:03:07</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 16:03:07</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:03:07</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:03:07</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:03:07</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:03:07</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:03:07</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:03:07</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:03:07</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:10:37</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 16:10:37</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 16:10:37</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 16:10:37</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/22/2019 16:10:37</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:10:37</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:10:37</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:10:37</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:10:37</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:10:37</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:10:37</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:10:37</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/22/2019 16:59:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/22/2019 16:59:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/22/2019 16:59:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/22/2019 16:59:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/22/2019 16:59:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/22/2019 18:12:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/22/2019 18:12:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/22/2019 18:12:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/22/2019 18:12:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/22/2019 18:12:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/23/2019 06:47:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 06:47:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 06:47:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 06:47:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 06:47:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/23/2019 07:05:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 07:05:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 07:05:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 07:05:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 07:05:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/23/2019 09:20:49</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 09:20:49</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 09:20:49</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 09:20:49</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 09:20:49</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 09:20:49</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 09:20:49</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 09:20:49</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 09:20:49</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/23/2019 09:20:49</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/23/2019 09:20:49</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/23/2019 09:20:49</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:16:44</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 13:16:44</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 13:16:44</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 13:16:44</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 13:16:44</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:16:44</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:16:44</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:16:44</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:16:44</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:16:44</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:16:44</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:16:44</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:39:23</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 13:39:23</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 13:39:23</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 13:39:23</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 13:39:23</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:39:23</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:39:23</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:39:23</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:39:23</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:39:23</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:39:23</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/23/2019 13:39:23</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 14:24:20</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 14:24:20</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 14:24:20</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 14:24:20</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 14:24:20</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 14:24:20</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 14:24:20</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 14:24:20</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 14:24:20</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/23/2019 14:24:20</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/23/2019 14:24:20</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/23/2019 14:24:20</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:03:39</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:03:39</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:03:39</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:03:39</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:03:39</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:03:39</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:03:39</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:03:39</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:03:39</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:03:39</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:03:39</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:03:39</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:16:27</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:16:27</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:16:27</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:16:27</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:16:27</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:16:27</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:16:27</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:16:27</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:16:27</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:16:27</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:16:27</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:16:27</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:33:31</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:33:31</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:33:31</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:33:31</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:33:31</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:33:31</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:33:31</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:33:31</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:33:31</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:33:31</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:33:31</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:33:31</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:48:17</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:48:17</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:48:17</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:48:17</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 15:48:17</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:48:17</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:48:17</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:48:17</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:48:17</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:48:17</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:48:17</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/23/2019 15:48:17</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:00:23</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 16:00:23</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 16:00:23</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 16:00:23</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 16:00:23</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:00:23</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:00:23</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:00:23</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:00:23</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:00:23</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:00:23</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:00:23</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:43:04</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 16:43:04</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 16:43:04</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 16:43:04</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 16:43:04</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:43:04</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:43:04</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:43:04</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:43:04</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:43:04</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:43:04</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/23/2019 16:43:04</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 17:07:22</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 17:07:22</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 17:07:22</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 17:07:22</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/23/2019 17:07:22</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 17:07:22</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/23/2019 17:07:22</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 17:07:22</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 17:07:22</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/23/2019 17:07:22</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/23/2019 17:07:22</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/23/2019 17:07:22</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/23/2019 17:48:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/23/2019 17:48:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/23/2019 17:48:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/23/2019 17:48:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/23/2019 17:48:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/23/2019 18:11:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/23/2019 18:11:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/23/2019 18:11:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/23/2019 18:11:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/23/2019 18:11:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/24/2019 07:06:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 07:06:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 07:06:00</date>
+<name>WHITE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/24/2019 07:06:00</date>
+<name>WHITE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/24/2019 07:06:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/24/2019 07:36:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 07:36:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 07:36:00</date>
+<name>BLUE-TNK-3</name>
+<value>ON</value></record>
+<record><date>10/24/2019 07:36:00</date>
+<name>BLUE-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/24/2019 07:36:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/24/2019 14:10:54</date>
+<name>WHITE-TNK-1</name>
+<value>ON</value></record>
+<record><date>10/24/2019 14:11:14</date>
+<name>BLUE-TNK-1</name>
+<value>ON</value></record>
+<record><date>10/24/2019 14:24:35</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 14:24:52</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 14:25:07</date>
+<name>WHITE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 14:25:21</date>
+<name>BLUE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 14:25:47</date>
+<name>WHITE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 14:26:04</date>
+<name>BLUE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:27:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:27:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:27:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:27:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:27:00</date>
+<name>WHITE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:27:00</date>
+<name>BLUE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:27:00</date>
+<name>WHITE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:27:00</date>
+<name>BLUE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:27:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/24/2019 15:27:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/24/2019 15:27:00</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/24/2019 15:27:00</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/24/2019 15:41:44</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:41:44</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:41:44</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:41:44</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:41:44</date>
+<name>WHITE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:41:44</date>
+<name>BLUE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:41:44</date>
+<name>WHITE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:41:44</date>
+<name>BLUE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:41:44</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/24/2019 15:41:44</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/24/2019 15:41:44</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/24/2019 15:41:44</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/24/2019 15:54:06</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:54:06</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:54:06</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:54:06</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:54:06</date>
+<name>WHITE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:54:06</date>
+<name>BLUE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:54:06</date>
+<name>WHITE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:54:06</date>
+<name>BLUE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/24/2019 15:54:06</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/24/2019 15:54:06</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/24/2019 15:54:06</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/24/2019 15:54:06</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/24/2019 18:10:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/24/2019 18:10:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/24/2019 18:10:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/24/2019 18:10:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/24/2019 18:10:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/24/2019 18:37:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/24/2019 18:37:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/24/2019 18:37:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/24/2019 18:37:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/24/2019 18:37:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/25/2019 07:07:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 07:07:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 07:07:00</date>
+<name>WHITE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 07:07:00</date>
+<name>WHITE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 07:07:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/25/2019 08:25:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 08:25:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 08:25:00</date>
+<name>BLUE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 08:25:00</date>
+<name>BLUE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 08:25:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/25/2019 14:30:39</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 14:30:39</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 14:30:39</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 14:30:39</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 14:30:39</date>
+<name>WHITE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 14:30:39</date>
+<name>BLUE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 14:30:39</date>
+<name>WHITE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 14:30:39</date>
+<name>BLUE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/25/2019 14:30:39</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/25/2019 14:30:39</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/25/2019 14:30:39</date>
+<name>SOL-TNK-2</name>
+<value>ON</value></record>
+<record><date>10/25/2019 14:30:39</date>
+<name>SOL-TNK-4</name>
+<value>ON</value></record>
+<record><date>10/25/2019 18:09:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/25/2019 18:09:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/25/2019 18:09:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/25/2019 18:09:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/25/2019 18:09:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/25/2019 19:26:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/25/2019 19:26:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/25/2019 19:26:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/25/2019 19:26:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/25/2019 19:26:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/26/2019 07:08:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/26/2019 07:08:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/26/2019 07:08:00</date>
+<name>WHITE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/26/2019 07:08:00</date>
+<name>WHITE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/26/2019 07:08:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/26/2019 09:14:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/26/2019 09:14:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/26/2019 09:14:00</date>
+<name>BLUE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/26/2019 09:14:00</date>
+<name>BLUE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/26/2019 09:14:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/26/2019 18:08:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/26/2019 18:08:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/26/2019 18:08:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/26/2019 18:08:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/26/2019 18:08:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/26/2019 20:15:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/26/2019 20:15:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/26/2019 20:15:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/26/2019 20:15:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/26/2019 20:15:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/27/2019 07:08:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/27/2019 07:08:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/27/2019 07:08:00</date>
+<name>WHITE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/27/2019 07:08:00</date>
+<name>WHITE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/27/2019 07:08:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/27/2019 10:02:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/27/2019 10:02:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/27/2019 10:02:00</date>
+<name>BLUE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/27/2019 10:02:00</date>
+<name>BLUE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/27/2019 10:02:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/27/2019 18:06:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/27/2019 18:06:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/27/2019 18:06:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/27/2019 18:06:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/27/2019 18:06:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/27/2019 21:03:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/27/2019 21:03:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/27/2019 21:03:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/27/2019 21:03:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/27/2019 21:03:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+<record><date>10/28/2019 07:09:00</date>
+<name>WHITE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/28/2019 07:09:00</date>
+<name>WHITE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/28/2019 07:09:00</date>
+<name>WHITE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/28/2019 07:09:00</date>
+<name>WHITE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/28/2019 07:09:00</date>
+<name>WhtLED_24_6</name>
+<value>ON</value></record>
+<record><date>10/28/2019 10:50:00</date>
+<name>BLUE-TNK-1</name>
+<value>RampUp</value></record>
+<record><date>10/28/2019 10:50:00</date>
+<name>BLUE-TNK-2</name>
+<value>RampUp</value></record>
+<record><date>10/28/2019 10:50:00</date>
+<name>BLUE-TNK-3</name>
+<value>RampUp</value></record>
+<record><date>10/28/2019 10:50:00</date>
+<name>BLUE-TNK-4</name>
+<value>RampUp</value></record>
+<record><date>10/28/2019 10:50:00</date>
+<name>BluLED_24_5</name>
+<value>ON</value></record>
+<record><date>10/28/2019 18:05:00</date>
+<name>WHITE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/28/2019 18:05:00</date>
+<name>WHITE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/28/2019 18:05:00</date>
+<name>WHITE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/28/2019 18:05:00</date>
+<name>WHITE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/28/2019 18:05:00</date>
+<name>WhtLED_24_6</name>
+<value>OFF</value></record>
+<record><date>10/28/2019 21:51:00</date>
+<name>BLUE-TNK-1</name>
+<value>OFF</value></record>
+<record><date>10/28/2019 21:51:00</date>
+<name>BLUE-TNK-2</name>
+<value>OFF</value></record>
+<record><date>10/28/2019 21:51:00</date>
+<name>BLUE-TNK-3</name>
+<value>OFF</value></record>
+<record><date>10/28/2019 21:51:00</date>
+<name>BLUE-TNK-4</name>
+<value>OFF</value></record>
+<record><date>10/28/2019 21:51:00</date>
+<name>BluLED_24_5</name>
+<value>OFF</value></record>
+</outlog>
