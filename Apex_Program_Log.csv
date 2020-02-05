@@ -1,15 +1,1 @@
-Date,Time,Name,Probe/Module,Modification
-11/5/19,10:00,Barnas,Salt-1,Moved probe from calibration solution to Tank 1
-11/5/19,10:00,Barnas,Salt-5,Put probe into Tank 5
-11/5/19,10:00,Barnas,Salt-9,Moved probe from calibration solution to Tank 9
-11/5/19,10:00,Barnas,Salt13,Moved probe from calibration solution to Tank 13
-11/5/19,10:00,Barnas,Salt17,Put probe into Tank 17
-11/5/19,13:00,Barnas,EB-1,Reconfigured all outlets
-11/5/19,13:00,Barnas,EB-2,Reconfigured all outlets
-11/5/19,13:00,Barnas,SOL-TNK-all,Log Enabled
-11/5/19,13:30,Barnas,Tmp-all,Heater ON if Tmp < 17
-11/5/19,15:45,Barnas,Salt-5,Calibrated
-11/5/19,15:45,Barnas,Salt-17,Calibrated
-11/6/19,9:45,Barnas,pH-18,Calibrated
-11/6/19,9:45,Barnas,pH-16,Calibrated
-11/6/19,10:30,Barnas,Tmp-all,Calibrated
+Date,Time,Name,Probe/Module,Modification11/5/19,10:00,Barnas,Salt-1,Moved probe from calibration solution to Tank 111/5/19,10:00,Barnas,Salt-5,Put probe into Tank 511/5/19,10:00,Barnas,Salt-9,Moved probe from calibration solution to Tank 911/5/19,10:00,Barnas,Salt13,Moved probe from calibration solution to Tank 1311/5/19,10:00,Barnas,Salt17,Put probe into Tank 1711/5/19,13:00,Barnas,EB-1,Reconfigured all outlets11/5/19,13:00,Barnas,EB-2,Reconfigured all outlets11/5/19,13:00,Barnas,SOL-TNK-all,Log Enabled11/5/19,13:30,Barnas,Tmp-all,Heater ON if Tmp < 1711/5/19,15:45,Barnas,Salt-5,Calibrated11/5/19,15:45,Barnas,Salt-17,Calibrated11/6/19,9:45,Barnas,pH-18,Calibrated11/6/19,9:45,Barnas,pH-16,Calibrated11/6/19,10:30,Barnas,Tmp-all,Calibrated11/19/19,9:00,Barnas,UV Light,Turned On11/22/19,10:00,Barnas,Tank Flow,Resumed from main sump to tanks new (sump pump installed)11/26/19,14:30,Barnas,Tank Flow,Turned off sump to tanks flow because carbon filter PVC loose12/13/19,9:00,Barnas,Sump-pH,Turned on CO2 scrubber in Sump12/13/19,14:30,Barnas,pH-11,CO2 ON if pH >8.05 and OFF if pH <8.0312/13/19,14:30,Barnas,pH-12,CO2 ON if pH >8.05 and OFF if pH <8.0312/13/19,14:30,Barnas,pH-13,CO2 ON if pH >8.05 and OFF if pH <8.0312/13/19,14:30,Barnas,pH-14,CO2 ON if pH >8.05 and OFF if pH <8.0312/13/19,14:30,Barnas,pH-15,CO2 ON if pH >8.05 and OFF if pH <8.0312/13/19,14:30,Barnas,pH-16,CO2 ON if pH >8.05 and OFF if pH <8.03

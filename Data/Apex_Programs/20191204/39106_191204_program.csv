@@ -1,0 +1,719 @@
+<?xml version="1.0"?>
+<proglist software="5.05_AB19" hardware="1.0">
+<hostname>apex1_39106</hostname>
+<serial>AC5:39106</serial>
+<timezone>-8.00</timezone>
+<date>12/04/2019 16:00:07</date>
+<outlets>
+<outlet>
+ <name>WHITE-TNK-1</name>
+ <icon>Sun</icon>
+ <outputID>0</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Sun 000/000 Then RampUp
+</program>
+</outlet>
+<outlet>
+ <name>BLUE-TNK-1</name>
+ <icon>Moon</icon>
+ <outputID>1</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Moon 000/000 Then RampUp
+</program>
+</outlet>
+<outlet>
+ <name>WHITE-TNK-2</name>
+ <icon>Sun</icon>
+ <outputID>2</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Sun 000/000 Then RampUp
+</program>
+</outlet>
+<outlet>
+ <name>BLUE-TNK-2</name>
+ <icon>Moon</icon>
+ <outputID>3</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Moon 000/000 Then RampUp
+</program>
+</outlet>
+<outlet>
+ <name>SndAlm_I6</name>
+ <icon>Sound B</icon>
+ <outputID>4</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Set OFF 
+</program>
+</outlet>
+<outlet>
+ <name>SndWrn_I7</name>
+ <icon>Sound A</icon>
+ <outputID>5</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Set OFF 
+</program>
+</outlet>
+<outlet>
+ <name>EmailAlm_I5</name>
+ <icon>Email</icon>
+ <outputID>6</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Set OFF 
+</program>
+</outlet>
+<outlet>
+ <name>Email2Alm_I9</name>
+ <icon>Email</icon>
+ <outputID>7</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Set OFF 
+If Tmp-1 &lt; -17.7 Then OFF 
+If Tmp-1 &lt; -17.7 Then OFF 
+If pH-1 &lt; 0.00 Then OFF 
+If pH-1 &lt; 0.00 Then OFF 
+If ORP &lt; 000 Then OFF 
+If ORP &lt; 000 Then OFF 
+If Tmp-1 &lt; 000 Then OFF 
+If Tmp-1 &lt; 000 Then OFF 
+If Salt-1 &gt; 36.0 Then ON 
+If Salt-1 &lt; 32.0 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>HEATER-1</name>
+ <icon>Thermometer</icon>
+ <outputID>8</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Tmp-1 &lt; 17.0 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>PWRHD-1</name>
+ <icon>Fan</icon>
+ <outputID>9</outputID>
+ <outputType>Always</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback ON 
+Set ON 
+</program>
+</outlet>
+<outlet>
+ <name>SOL-TNK-1</name>
+ <icon>Up/Down Arrows</icon>
+ <outputID>10</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback ON 
+OSC 000:00/375:00/375:00 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>LIGHT-TNK-1</name>
+ <icon>Light A</icon>
+ <outputID>11</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Sun 000/000 Then ON 
+If Moon 000/000 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>HEATER-3</name>
+ <icon>Thermometer</icon>
+ <outputID>12</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Tmp-3 &lt; 17.0 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>PWRHD-3</name>
+ <icon>Fan</icon>
+ <outputID>13</outputID>
+ <outputType>Always</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback ON 
+Set ON 
+</program>
+</outlet>
+<outlet>
+ <name>SOL-TNK-3</name>
+ <icon>Up/Down Arrows</icon>
+ <outputID>14</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Enable</outputLog>
+ <program>Fallback ON 
+OSC 000:00/375:00/375:00 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>LIGHT-TNK-3</name>
+ <icon>Light A</icon>
+ <outputID>15</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Sun 000/000 Then ON 
+If Moon 000/000 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>PH-TNK-1</name>
+ <icon>Left/Right Arrows</icon>
+ <outputID>16</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Enable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If pH-1 &gt; 7.87 Then ON 
+If pH-1 &lt; 7.85 Then OFF 
+</program>
+</outlet>
+<outlet>
+ <name>PH-TNK-3</name>
+ <icon>Left/Right Arrows</icon>
+ <outputID>17</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Enable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If pH-3 &gt; 7.87 Then ON 
+If pH-3 &lt; 7.85 Then OFF 
+</program>
+</outlet>
+<outlet>
+ <name>HEATER-2</name>
+ <icon>Thermometer</icon>
+ <outputID>18</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Tmp-2 &lt; 17.0 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>PWRHD-2</name>
+ <icon>Fan</icon>
+ <outputID>19</outputID>
+ <outputType>Always</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback ON 
+Set ON 
+</program>
+</outlet>
+<outlet>
+ <name>SOL-TNK-2</name>
+ <icon>Up/Down Arrows</icon>
+ <outputID>20</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Enable</outputLog>
+ <program>Fallback ON 
+OSC 000:00/375:00/375:00 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>LIGHT-TNK-2</name>
+ <icon>Light A</icon>
+ <outputID>21</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Sun 000/000 Then ON 
+If Moon 000/000 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>HEATER-4</name>
+ <icon>Thermometer</icon>
+ <outputID>22</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Tmp-4 &lt; 17.0 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>PWRHD-4</name>
+ <icon>Fan</icon>
+ <outputID>23</outputID>
+ <outputType>Always</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback ON 
+Set ON 
+</program>
+</outlet>
+<outlet>
+ <name>SOL-TNK-4</name>
+ <icon>Up/Down Arrows</icon>
+ <outputID>24</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Enable</outputLog>
+ <program>Fallback ON 
+OSC 000:00/375:00/375:00 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>LIGHT-TNK-4</name>
+ <icon>Light A</icon>
+ <outputID>25</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Sun 000/000 Then ON 
+If Moon 000/000 Then ON 
+</program>
+</outlet>
+<outlet>
+ <name>PH-TNK-2</name>
+ <icon>Left/Right Arrows</icon>
+ <outputID>26</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Enable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If pH-2 &gt; 7.87 Then ON 
+If pH-2 &lt; 7.85 Then OFF 
+</program>
+</outlet>
+<outlet>
+ <name>PH-TNK-4</name>
+ <icon>Left/Right Arrows</icon>
+ <outputID>27</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Enable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If pH-4 &gt; 7.87 Then ON 
+If pH-4 &lt; 7.85 Then OFF 
+</program>
+</outlet>
+<outlet>
+ <name>WHITE-TNK-3</name>
+ <icon>Up/Down Arrows</icon>
+ <outputID>28</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+tdata 00:00:00,0,0,10,0,0,0,0,0,0,0,0,0,0
+tdata 07:05:00,0,0,20,0,0,0,0,0,0,0,0,0,0
+tdata 10:20:00,0,0,100,0,0,0,0,0,0,0,0,0,0
+tdata 16:23:00,0,0,81,0,0,0,0,0,0,0,0,0,0
+tdata 21:36:00,0,0,40,0,0,0,0,0,0,0,0,0,0
+tdata 23:59:00,0,0,10,0,0,0,0,0,0,0,0,0,0
+</program>
+</outlet>
+<outlet>
+ <name>BLUE-TNK-3</name>
+ <icon>Left/Right Arrows</icon>
+ <outputID>29</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+tdata 00:00:00,0,0,10,0,0,0,0,0,0,0,0,0,0
+tdata 07:05:00,0,0,20,0,0,0,0,0,0,0,0,0,0
+tdata 10:20:00,0,0,100,0,0,0,0,0,0,0,0,0,0
+tdata 16:23:00,0,0,81,0,0,0,0,0,0,0,0,0,0
+tdata 21:36:00,0,0,40,0,0,0,0,0,0,0,0,0,0
+tdata 23:59:00,0,0,10,0,0,0,0,0,0,0,0,0,0
+</program>
+</outlet>
+<outlet>
+ <name>WHITE-TNK-4</name>
+ <icon>Up/Down Arrows</icon>
+ <outputID>30</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+tdata 00:00:00,0,0,10,0,0,0,0,0,0,0,0,0,0
+tdata 07:05:00,0,0,20,0,0,0,0,0,0,0,0,0,0
+tdata 10:20:00,0,0,100,0,0,0,0,0,0,0,0,0,0
+tdata 16:23:00,0,0,81,0,0,0,0,0,0,0,0,0,0
+tdata 21:36:00,0,0,40,0,0,0,0,0,0,0,0,0,0
+tdata 23:59:00,0,0,10,0,0,0,0,0,0,0,0,0,0
+</program>
+</outlet>
+<outlet>
+ <name>BLUE-TNK-4</name>
+ <icon>Left/Right Arrows</icon>
+ <outputID>31</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+tdata 00:00:00,0,0,10,0,0,0,0,0,0,0,0,0,0
+tdata 07:05:00,0,0,20,0,0,0,0,0,0,0,0,0,0
+tdata 10:20:00,0,0,100,0,0,0,0,0,0,0,0,0,0
+tdata 16:23:00,0,0,81,0,0,0,0,0,0,0,0,0,0
+tdata 21:36:00,0,0,40,0,0,0,0,0,0,0,0,0,0
+tdata 23:59:00,0,0,10,0,0,0,0,0,0,0,0,0,0
+</program>
+</outlet>
+<outlet>
+ <name>BluLED_2_5</name>
+ <icon>Moon</icon>
+ <outputID>32</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Moon 000/000 Then ON 
+If Tmp-1 &gt; 35.0 Then OFF 
+Min Time 030:00 Then OFF 
+</program>
+</outlet>
+<outlet>
+ <name>WhtLED_2_6</name>
+ <icon>Sun</icon>
+ <outputID>33</outputID>
+ <outputType>Advanced</outputType>
+ <outputLog>Disable</outputLog>
+ <program>Fallback OFF 
+Set OFF 
+If Sun 000/000 Then ON 
+If Tmp-1 &gt; 35.0 Then OFF 
+Min Time 030:00 Then OFF 
+</program>
+</outlet>
+</outlets>
+<profiles>
+<profile>
+ <name>RampUp</name>
+ <type>ramp</type>
+ <rampTime>30</rampTime>
+ <startIntensity>0</startIntensity>
+ <endIntensity>100</endIntensity>
+ </profile><profile>
+ <name>PF2</name>
+ <type>ramp</type>
+ <rampTime>30</rampTime>
+ <startIntensity>0</startIntensity>
+ <endIntensity>100</endIntensity>
+ </profile><profile>
+ <name>PF3</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF4</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF5</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF6</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF7</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF8</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF9</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF10</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF11</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF12</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF13</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF14</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF15</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF16</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF17</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF18</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF19</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF20</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF21</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF22</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF23</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF24</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF25</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF26</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF27</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF28</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF29</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF30</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF31</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile><profile>
+ <name>PF32</name>
+ <type>pump</type>
+ <minIntensity>0</minIntensity>
+ <maxIntensity>100</maxIntensity>
+ <sync>Disable</sync>
+ <div10>Disable</div10>
+ <intOffTime>1</intOffTime>
+ <OnTime>1</OnTime>
+ <OffTime>1</OffTime>
+ </profile></profiles>
+</proglist>
