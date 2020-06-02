@@ -7,14 +7,14 @@ library(tidyverse)
 ########################
 # File Names
 ########################
-foldername<-'20200204' # folder of the day
-date<-'20200204' # today's date
+foldername<-'20200209' # folder of the day
+date<-'20200209' # today's date
 Apex_All_Datalogs<-'Apex_Full_Datalog.csv' # Larger data set your compiled new data will be added to
-Apex_1_filename<-'39106_200131d3.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
-Apex_2_filename<-'40216_200131d3.csv' # data from Apex 40216
-Apex_3_filename<-'39952_200131d3.csv' # data from Apex 39952
-Apex_4_filename<-'37810_200131d3.csv' # data from Apex 37810
-Apex_5_filename<-'41239_200131d3.csv' # data from Apex 41239
+Apex_1_filename<-'39106_200216d4.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
+Apex_2_filename<-'40216_200216d4.csv' # data from Apex 40216
+Apex_3_filename<-'39952_200216d4.csv' # data from Apex 39952
+Apex_4_filename<-'37810_200216d4.csv' # data from Apex 37810
+Apex_5_filename<-'41239_200216d4.csv' # data from Apex 41239
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
@@ -313,6 +313,10 @@ Apex_All <-
 
 Apex_All <- Apex_All %>% arrange(Date) # or
 #Apex_Full <- Apex_Full %>% arrange(Probe)
-View(Apex_All)
+#View(Apex_All)
 
 write_csv(Apex_All,paste0('Data/Apex_DataLogs/','Apex_Full_Datalog.csv'))
+
+Apex_pH <- Apex_All %>%
+  filter(Type %in% c("Temp", "pH"))
+write_csv(Apex_pH,paste0('Data/Apex_DataLogs/','Apex_temp_pH_Datalog.csv'))
