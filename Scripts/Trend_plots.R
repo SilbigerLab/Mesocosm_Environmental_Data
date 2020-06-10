@@ -1,12 +1,13 @@
+# Organizing data for plotting over time
+
+#clean environment
+rm(list=ls())
 
 # Load libraries
 library(tidyverse)
 library(ggplot2)
 library(lubridate)
 library(plotrix)
-
-#clean environment
-rm(list=ls())
 
 # Bring in data
 datalog<-read_csv("Data/Apex_DataLogs/Apex_temp_pH_Datalog.csv")
@@ -67,17 +68,20 @@ plot<-ggplot(data=datalog, aes(x=Date, y=mean, colour=Treatment))+
   geom_line(aes(colour=Treatment))+
   geom_errorbar(aes(ymin=mean-SE,ymax=mean+SE),width=0.2,position=position_dodge(0.05))+
   facet_wrap(ncol=1,~Treatment+Type, scales="free_y")+
+  labs(x="Date",y="Mean TempC and pH")+
   ggsave("Output/20200607/plot_error.png")
 # Temp plots
 Tempplot<-ggplot(data=tempdata, aes(x=Date, y=mean, colour=Treatment))+
   geom_line(aes(colour=Treatment))+
   geom_errorbar(aes(ymin=mean-SE,ymax=mean+SE),width=0.2,position=position_dodge(0.05))+
   facet_wrap(ncol=1,~Treatment+Type, scales="free_y")+
+  labs(x="Date",y="Mean TempC and pH")+
   ggsave("Output/20200607/tempplot_error.png")
 # pH plots
 pHplot<-ggplot(data=phdata, aes(x=Date, y=mean, colour=Treatment))+
   geom_line(aes(colour=Treatment))+
   geom_errorbar(aes(ymin=mean-SE,ymax=mean+SE),width=0.2,position=position_dodge(0.05))+
   facet_wrap(ncol=1,~Treatment+Type, scales="free_y")+
+  labs(x="Date",y="Mean TempC and pH")+
   ggsave("Output/20200607/pHplot_error.png")
 plot # plot graphs
