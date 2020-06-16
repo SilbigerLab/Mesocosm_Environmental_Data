@@ -5,15 +5,3 @@ Mean Temperature and pH
 
 with standard error  
 ![Mean Temperature and pH with SE](https://github.com/SilbigerLab/Mesocosm_Environmental_Data/blob/master/Output/20200607/plot_error.png)
-
-Mean Temperature  
-![Mean Temperature](https://github.com/SilbigerLab/Mesocosm_Environmental_Data/blob/master/Output/20200607/tempplot.png)
-
-with standard error  
-![Mean Temperature with SE](https://github.com/SilbigerLab/Mesocosm_Environmental_Data/blob/master/Output/20200607/tempplot_error.png)
-
-Mean pH  
-![Mean pH](https://github.com/SilbigerLab/Mesocosm_Environmental_Data/blob/master/Output/20200607/pHplot.png)
-
-with standard error  
-![Mean pH with SE](https://github.com/SilbigerLab/Mesocosm_Environmental_Data/blob/master/Output/20200607/pHplot_error.png)
