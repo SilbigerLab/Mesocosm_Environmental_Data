@@ -9,8 +9,10 @@ library(ggplot2)
 library(lubridate)
 library(plotrix)
 
-# Bring in data
+# Load data
 datalog<-read_csv("Data/Apex_DataLogs/Apex_temp_pH_Datalog.csv")
+startLog<-"2020-02-05 6:00" # start date (and time) of data logging. Maintain formatting
+endLog<-"2020-02-20" # end date (and time) of data logging
 # Unite Date and Time into one column
 datalog<-datalog%>%
   unite("Date",Date:Time, sep=" ",remove=TRUE)%>%
@@ -38,7 +40,7 @@ log.Am<-datalog%>%
 datalog<-log.Oc%>%
   rbind(log.Low,log.Am)%>% # bind all treatment data
   arrange(Date)%>% # rearrange by Date and time
-  filter((Date>="2020-02-05 6:00") & (Date<="2020-02-20")) # filter out "test time" data
+  filter((Date>=startLog) & (Date<=endLog)) # filter out "test time" data
 
 # Add column for difference in value from previous recorded value
 datalog<-datalog%>%
