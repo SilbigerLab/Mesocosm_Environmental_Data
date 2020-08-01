@@ -1,42 +1,47 @@
 rm(list=ls())
 library(tidyverse)
 
-foldername<-'Data/HOBO_loggers/20200316/'
+# change the dated folder only
+foldername<-'Data/HOBO_loggers/20200731/'
+folder_date<-'20200731'
+
 # filenames for each tank
-Tank1 <- 'TNK-1-SN20569922 2020-03-16 17_27_02 -0700.csv'
-Tank2 <- 'TNK-2-SN20565250 2020-03-16 17_18_46 -0700.csv'
-Tank3 <- 'TNK-3-SN20565253 2020-03-16 17_19_53 -0700.csv'
-Tank4 <- 'TNK-4-SN20565252 2020-03-16 17_22_43 -0700.csv'
-#Tank5 <- '.csv'
-Tank6 <- 'TNK-6-SN20565254 2020-03-16 17_18_29 -0700.csv'
-Tank7 <- 'TNK-7-SN20565255 2020-03-16 17_21_00 -0700.csv'
-Tank8 <- 'TNK-8-SN20714139 2020-03-16 17_22_12 -0700.csv'
-Tank9 <- 'TNK-9-SN20565257 2020-03-16 17_17_30 -0700.csv'
-Tank10 <- 'TNK-10-SN20565258 2020-03-16 17_23_14 -0700.csv'
-Tank11 <- 'TNK-11-SN20565259 2020-03-16 17_21_50 -0700.csv'
-Tank12 <- 'TNK-12-SN20714140 2020-03-16 17_19_33 -0700.csv'
-Tank13 <- 'TNK-13-SN20565261 2020-03-16 17_17_08 -0700.csv'
-Tank14 <- 'TNK-14-SN20565262 2020-03-16 17_26_36 -0700.csv'
-Tank15 <- 'TNK-15-SN20565263 2020-03-16 17_27_46 -0700.csv'
-Tank16 <- 'TNK-16-SN20714141 2020-03-16 17_17_52 -0700.csv'
-Tank17 <- 'TNK-17-SN20565265 2020-03-16 17_21_30 -0700.csv'
-Tank18 <- 'TNK-18-SN20569983 2020-03-16 17_19_10 -0700.csv'
-Tank19 <- 'TNK-19-SN20714142 2020-03-16 17_18_10 -0700.csv'
-Tank20 <- 'TNK-20-SN20714143 2020-03-16 17_20_15 -0700.csv'
+Tank1 <- 'TNK-1-SN20569922 2020-07-31 14_43_03 -0700.csv'
+Tank2 <- 'TNK-2-SN20565250 2020-07-31 14_43_49 -0700.csv'
+Tank3 <- 'TNK-3-SN20565253 2020-07-31 14_44_33 -0700.csv'
+Tank4 <- 'TNK-4-SN20565252 2020-07-31 14_45_08 -0700.csv'
+Tank5 <- 'TNK-5-SN20555838 2020-07-31 14_47_33 -0700.csv'
+Tank6 <- 'TNK-6-20565254 2020-07-31 14_48_14 -0700.csv'
+Tank7 <- 'TNK-7-SN20565255 2020-07-31 14_48_50 -0700.csv'
+Tank8 <- 'TNK-8-SN20714139 2020-07-31 14_49_32 -0700.csv'
+Tank9 <- 'TNK-9-SN20565257 2020-07-31 14_50_24 -0700.csv'
+Tank10 <- 'TNK-10-SN20565258 2020-07-31 14_50_55 -0700.csv'
+Tank11 <- 'TNK-11-SN20565259 2020-07-31 15_04_16 -0700.csv'
+Tank12 <- 'TNK-12-SN20714140 2020-07-31 15_04_49 -0700.csv'
+Tank13 <- 'TNK-13-SN20565261 2020-07-31 15_05_38 -0700.csv'
+Tank14 <- 'TNK-14-SN20565262 2020-07-31 15_06_13 -0700.csv'
+Tank15 <- 'TNK-15-SN20565263 2020-07-31 15_06_50 -0700.csv'
+Tank16 <- 'TNK-16-SN20714141 2020-07-31 15_07_33 -0700.csv'
+Tank17 <- 'TNK-17-SN20565265 2020-07-31 15_08_16 -0700.csv'
+Tank18 <- 'TNK-18-SN20569983 2020-07-31 15_08_51 -0700.csv'
+Tank19 <- 'TNK-19-SN20714142 2020-07-31 15_09_46 -0700.csv'
+Tank20 <- 'TNK-20-SN20714143 2020-07-31 15_10_25 -0700.csv'
 
-##############
-# CHANGE FILE PATH TO CORRECT FOLDER (DATE) AND COPY-PASTE EACH HOBO CSV FILE NAME
+########################################################
+# DO NOT CHANGE ANYTHING BELOW HERE ---------------
+########################################################
 
-If(Tank1=TRUE){
-  Tnk1 <- read_csv(paste0(foldername,Tank1),
+If(exists(Tank1)) {
+Tnk1 <- read_csv(paste0(foldername,Tank1),
                  skip=2, #removes first two rows before column headings
                  skip_empty_rows = TRUE,
                  col_names=TRUE,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),
                                                "Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip()))
-  Tnk1 <- drop_na(Tnk1)
-  Tnk1 <- Tnk1 %>%
-    rename(Tnk1_TmpC = `Temp, (*C)`)
-  }
+Tnk1 <- drop_na(Tnk1)
+Tnk1 <- Tnk1 %>%
+  rename(Tnk1_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank2)) {
 Tnk2 <- read_csv(paste0(foldername,Tank2),
                  skip=2,
                  skip_empty_rows = TRUE,
@@ -45,6 +50,8 @@ Tnk2 <- read_csv(paste0(foldername,Tank2),
 Tnk2 <- drop_na(Tnk2)
 Tnk2 <- Tnk2 %>%
   rename(Tnk2_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank3)) {
 Tnk3 <- read_csv(paste0(foldername,Tank3),
                   skip=2,
                   skip_empty_rows = TRUE,
@@ -53,6 +60,8 @@ Tnk3 <- read_csv(paste0(foldername,Tank3),
 Tnk3 <- drop_na(Tnk3)
 Tnk3 <- Tnk3 %>%
   rename(Tnk3_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank4)) {
 Tnk4 <- read_csv(paste0(foldername,Tank4),
                  skip=2,
                  skip_empty_rows = TRUE,
@@ -61,7 +70,8 @@ Tnk4 <- read_csv(paste0(foldername,Tank4),
 Tnk4 <- drop_na(Tnk4)
 Tnk4 <- Tnk4 %>%
   rename(Tnk4_TmpC = `Temp, (*C)`)
-If(Tank5=TRUE){
+}
+If(exists(Tank5)) {
 Tnk5 <- read_csv(paste0(foldername,Tank5),
                  skip=2,
                  skip_empty_rows = TRUE,
@@ -69,7 +79,9 @@ Tnk5 <- read_csv(paste0(foldername,Tank5),
                                                "Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip()))
 Tnk5 <- drop_na(Tnk5)
 Tnk5 <- Tnk5 %>%
-  rename(Tnk5_TmpC = `Temp, (*C)`)}
+  rename(Tnk5_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank6)) {
 Tnk6 <- read_csv(paste0(foldername,Tank6),
                  skip=2,
                  skip_empty_rows = TRUE,
@@ -78,6 +90,8 @@ Tnk6 <- read_csv(paste0(foldername,Tank6),
 Tnk6 <- drop_na(Tnk6)
 Tnk6 <- Tnk6 %>%
   rename(Tnk6_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank7)) {
 Tnk7 <- read_csv(paste0(foldername,Tank7),
                  skip=2,
                  skip_empty_rows = TRUE,
@@ -86,6 +100,8 @@ Tnk7 <- read_csv(paste0(foldername,Tank7),
 Tnk7 <- drop_na(Tnk7)
 Tnk7 <- Tnk7 %>%
   rename(Tnk7_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank8)) {
 Tnk8 <- read_csv(paste0(foldername,Tank8),
                   skip=2,
                   skip_empty_rows = TRUE,
@@ -94,6 +110,8 @@ Tnk8 <- read_csv(paste0(foldername,Tank8),
 Tnk8 <- drop_na(Tnk8)
 Tnk8 <- Tnk8 %>%
   rename(Tnk8_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank9)) {
 Tnk9 <- read_csv(paste0(foldername,Tank9),
                  skip=2,
                  skip_empty_rows = TRUE,
@@ -102,6 +120,8 @@ Tnk9 <- read_csv(paste0(foldername,Tank9),
 Tnk9 <- drop_na(Tnk9)
 Tnk9 <- Tnk9 %>%
   rename(Tnk9_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank10)) {
 Tnk10 <- read_csv(paste0(foldername,Tank10),
                   skip=2,
                   skip_empty_rows = TRUE,
@@ -110,6 +130,8 @@ Tnk10 <- read_csv(paste0(foldername,Tank10),
 Tnk10 <- drop_na(Tnk10)
 Tnk10 <- Tnk10 %>%
   rename(Tnk10_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank11)) {
 Tnk11 <- read_csv(paste0(foldername,Tank11),
                   skip=2,
                   skip_empty_rows = TRUE,
@@ -118,6 +140,8 @@ Tnk11 <- read_csv(paste0(foldername,Tank11),
 Tnk11 <- drop_na(Tnk11)
 Tnk11 <- Tnk11 %>%
   rename(Tnk11_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank12)) {
 Tnk12 <- read_csv(paste0(foldername,Tank12),
                   skip=2,
                   skip_empty_rows = TRUE,
@@ -126,6 +150,8 @@ Tnk12 <- read_csv(paste0(foldername,Tank12),
 Tnk12 <- drop_na(Tnk12)
 Tnk12 <- Tnk12 %>%
   rename(Tnk12_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank13)) {
 Tnk13 <- read_csv(paste0(foldername,Tank13),
                   skip=2,
                   skip_empty_rows = TRUE,
@@ -134,6 +160,8 @@ Tnk13 <- read_csv(paste0(foldername,Tank13),
 Tnk13 <- drop_na(Tnk13)
 Tnk13 <- Tnk13 %>%
   rename(Tnk13_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank14)) {
 Tnk14 <- read_csv(paste0(foldername,Tank14),
                   skip=2,
                   skip_empty_rows = TRUE,
@@ -142,6 +170,8 @@ Tnk14 <- read_csv(paste0(foldername,Tank14),
 Tnk14 <- drop_na(Tnk14)
 Tnk14 <- Tnk14 %>%
   rename(Tnk14_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank15)) {
 Tnk15 <- read_csv(paste0(foldername,Tank15),
                   skip=2,
                   skip_empty_rows = TRUE,
@@ -150,6 +180,8 @@ Tnk15 <- read_csv(paste0(foldername,Tank15),
 Tnk15 <- drop_na(Tnk15)
 Tnk15 <- Tnk15 %>%
   rename(Tnk15_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank16)) {
 Tnk16 <- read_csv(paste0(foldername,Tank16),
                   skip=2,
                   skip_empty_rows = TRUE,
@@ -158,6 +190,8 @@ Tnk16 <- read_csv(paste0(foldername,Tank16),
 Tnk16 <- drop_na(Tnk16)
 Tnk16 <- Tnk16 %>%
   rename(Tnk16_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank17)) {
 Tnk17 <- read_csv(paste0(foldername,Tank17),
                   skip=2,
                   skip_empty_rows = TRUE,
@@ -166,7 +200,9 @@ Tnk17 <- read_csv(paste0(foldername,Tank17),
 Tnk17 <- drop_na(Tnk17)
 Tnk17 <- Tnk17 %>%
   rename(Tnk17_TmpC = `Temp, (*C)`)
-Tnk18 <- read_csv(paste0(foldername,Tank18),
+}
+If(exists(Tank18)) {
+  Tnk18 <- read_csv(paste0(foldername,Tank18),
                   skip=2,
                   skip_empty_rows = TRUE,
                   col_names=TRUE,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),
@@ -174,6 +210,8 @@ Tnk18 <- read_csv(paste0(foldername,Tank18),
 Tnk18 <- drop_na(Tnk18)
 Tnk18 <- Tnk18 %>%
   rename(Tnk18_TmpC = `Temp, (*C)`)
+}
+If(exists(Tank19)) {
 Tnk19 <- read_csv(paste0(foldername,Tank19),
                            skip=2,
                            skip_empty_rows = TRUE,
@@ -182,7 +220,8 @@ Tnk19 <- read_csv(paste0(foldername,Tank19),
 Tnk19 <- drop_na(Tnk19)
 Tnk19 <- Tnk19 %>%
   rename(Tnk19_TmpC = `Temp, (*C)`)
-Tnk19 <- separate(Tnk19,"Date Time, GMT -0700", into=c("Date","Time"), sep = " ", remove = TRUE)
+}
+If(exists(Tank20)) {
 Tnk20 <- read_csv(paste0(foldername,Tank20),
                   skip=2,
                   skip_empty_rows = TRUE,
@@ -191,12 +230,10 @@ Tnk20 <- read_csv(paste0(foldername,Tank20),
 Tnk20 <- drop_na(Tnk20)
 Tnk20 <- Tnk20 %>%
   rename(Tnk20_TmpC = `Temp, (*C)`)
-Tnk20 <- separate(Tnk20,"Date Time, GMT -0700", into=c("Date","Time"), sep = " ", remove = TRUE)
-
+}
 ##############
-# DO NOT CHANGE THIS SECTION
+
 # Merge all Temp data into one dataframe
-Hobo_All <- merge(x = Tnk19, y = Tnk20, by = "Date", all = TRUE)
 Hobo_All <- merge(x = Tnk19, y = Tnk20, by = "Date Time, GMT -0700", all = TRUE)
 Hobo_All <- merge(x = Tnk18, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
 Hobo_All <- merge(x = Tnk17, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
@@ -220,6 +257,6 @@ Hobo_All <- merge(x = Tnk1, y = Hobo_All, by = "Date Time, GMT -0700", all = TRU
 Hobo_All <- separate(Hobo_All,"Date Time, GMT -0700", into=c("Date","Time"), sep = " ", remove = TRUE)
 View(Hobo_All)
 
-##############
-# CHANGE FILE DATE BEFORE WRITING CSV
-#write_csv(Hobo_All,"HOBO/Tidy/HOBOLog_20191024.csv")
+############## save data file
+
+write_csv(Hobo_All,paste0(foldername,"HOBOLog_",folder_date,".csv"))
