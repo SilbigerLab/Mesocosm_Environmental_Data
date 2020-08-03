@@ -1,272 +1,271 @@
+# The following script will produce two dataframes:one containing all logged Apex data, and one only containing temperature and pH data from each mesocosm tank
+
 rm(list=ls())
 library(tidyverse)
-
-# The following script will produce a dataframe containing temperature and pH data only from each mesocosm tank
-# If you would like a dataframe containing all datalog information, remove the filter from the Apex_Full section before writing the csv
 
 ########################
 # File Names
 ########################
-foldername<-'20200725' # folder of the day
-date<-'20200725' # today's date
-Apex_All_Datalogs<-'Apex_Full_Datalog.csv' # Larger data set your compiled new data will be added to
-Apex_1_filename<-'datalog_1_200721d4.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
-Apex_2_filename<-'40216_200216d4.csv' # data from Apex 40216
-Apex_3_filename<-'39952_200216d4.csv' # data from Apex 39952
-Apex_4_filename<-'37810_200216d4.csv' # data from Apex 37810
-Apex_5_filename<-'41239_200216d4.csv' # data from Apex 41239
+foldername<-'20200802' # folder of the day
+date<-'20200802' # today's date
+Apex_All_Datalogs<-'Apex_Full_Datalog.csv' # Long-term historical data set
+Apex_1_filename<-'datalog_1_200731d2.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
+Apex_2_filename<-'datalog_2_200731d2.csv' # data from Apex 40216
+Apex_3_filename<-'datalog_3_200731d2.csv' # data from Apex 39952
+Apex_4_filename<-'datalog_4_200731d2.csv' # data from Apex 37810
+Apex_5_filename<-'datalog_5_200731d2.csv' # data from Apex 41239
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
 #################################################################################
 
 ########################
-# Apex 39106, Tanks 1-4
+# Apex_1 39106, Tanks 1-4
 ########################
-Apex_39106 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/',Apex_1_filename),
+Apex_1 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/',Apex_1_filename),
                        col_names = FALSE,
                        skip=6) #skips first 6 rows containing system information
-View(Apex_39106)
+
 #Splits data into separate columns
-Apex_39106 <- separate(Apex_39106,"X1", into=c("Date",NA), sep="</date>", remove=TRUE) # Removes </date>
-Apex_39106 <- separate(Apex_39106,"Date", into=c("Date",NA), sep="<probe>", remove=TRUE) # Removes <probe>
+Apex_1 <- separate(Apex_1,"X1", into=c("Date",NA), sep="</date>", remove=TRUE) # Removes </date>
+Apex_1 <- separate(Apex_1,"Date", into=c("Date",NA), sep="<probe>", remove=TRUE) # Removes <probe>
 
-Apex_39106 <- separate(Apex_39106,"Date", into=c("Date",NA), sep="</record>", remove=TRUE) # Removes second to last row </record>
-Apex_39106 <- separate(Apex_39106,"Date", into=c("Date",NA), sep="</datalog>", remove=TRUE) # Removes last row </datalog>
+Apex_1 <- separate(Apex_1,"Date", into=c("Date",NA), sep="</record>", remove=TRUE) # Removes second to last row </record>
+Apex_1 <- separate(Apex_1,"Date", into=c("Date",NA), sep="</datalog>", remove=TRUE) # Removes last row </datalog>
 
-Apex_39106 <- separate(Apex_39106,"Date", into=c("Date","Probe"), sep="<name>", remove=TRUE) # Date/Time become a new second column separete from other data
-Apex_39106 <- separate(Apex_39106,"Probe",into=c("Probe","Type"), sep="</name> <type>",remove=TRUE) # Splits probe name from other probe data
-Apex_39106 <- separate(Apex_39106,"Type",into=c("Type","Value"), sep="</type><value>",remove=TRUE) # Splits probe type from probe value
-Apex_39106 <- separate(Apex_39106,"Value",into=c("Value",NA), sep="</value></probe>",remove=TRUE) # Removes <probe>
+Apex_1 <- separate(Apex_1,"Date", into=c("Date","Probe"), sep="<name>", remove=TRUE) # Date/Time become a new second column separete from other data
+Apex_1 <- separate(Apex_1,"Probe",into=c("Probe","Type"), sep="</name> <type>",remove=TRUE) # Splits probe name from other probe data
+Apex_1 <- separate(Apex_1,"Type",into=c("Type","Value"), sep="</type><value>",remove=TRUE) # Splits probe type from probe value
+Apex_1 <- separate(Apex_1,"Value",into=c("Value",NA), sep="</value></probe>",remove=TRUE) # Removes <probe>
 
-Apex_39106 <- separate(Apex_39106,"Date", into=c(NA,"Date"), sep="<date>", remove=TRUE) # removes <date>
-Apex_39106 <- fill(Apex_39106,"Date",.direction = c("down")) # Fills in date/time data for all probes/types/values until reaches the next date/time
+Apex_1 <- separate(Apex_1,"Date", into=c(NA,"Date"), sep="<date>", remove=TRUE) # removes <date>
+Apex_1 <- fill(Apex_1,"Date",.direction = c("down")) # Fills in date/time data for all probes/types/values until reaches the next date/time
 
 # Removes all blank columns (values == NA)
-Apex_39106 <- drop_na(Apex_39106)
+Apex_1 <- drop_na(Apex_1)
 
 # Parse date and time
-Apex_39106$Date <- Apex_39106$Date %>%
-  parse_datetime(format = "%m/%d/%Y %H:%M:%S", na=character(),
+Apex_1$Date <- Apex_1$Date %>%
+  parse_datetime(format = "%m/%d/%Y %T", na=character(),
                  locale = default_locale(), trim_ws = TRUE)
 
 # Convert character strings to numeric
-Apex_39106$Value <- Apex_39106$Value %>%
+Apex_1$Value <- Apex_1$Value %>%
   parse_double(na=c("","NA"),locale=default_locale(),trim_ws = TRUE)
 
 # Optional: separate date and time
-#Apex_39106 <- separate(Apex_39106,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
+#Apex_1 <- separate(Apex_1,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
 
 # For bringing in multiple files for the same apex in the same folder (if volume of apex data requires multiple smaller files)
-If(paste0('Data/Apex_DataLogs/',foldername,'/','39106_datalog.csv')=TRUE){
-  Apex_39106_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','39106_datalog.csv'),
+If(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_1_datalog.csv')=TRUE){
+  Apex_1_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_1_datalog.csv'),
                                col_names = TRUE)
-  Apex_39106 <- 
-    union(Apex_39106,Apex_39106_union,by=Date)
-  Apex_39106 <- Apex_39106 %>% arrange(Date)
+  Apex_1 <- 
+    union(Apex_1,Apex_1_union,by=Date)
+  Apex_1 <- Apex_1 %>% arrange(Date)
 }
 
-write_csv(Apex_39106,paste0('Data/Apex_DataLogs/',foldername,'/','39106_datalog.csv'))
+write_csv(Apex_1,paste0('Data/Apex_DataLogs/',foldername,'/','Apex_1_datalog.csv'))
 
 
 ########################
-# Apex 40216, Tanks 5-8
+# Apex_2 40216, Tanks 5-8
 ########################
 
-Apex_40216 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/',Apex_2_filename),
+Apex_2 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/',Apex_2_filename),
                        col_names = FALSE,
                        skip=6)  #skips first 6 rows containing system information
 
 #Splits data into separate columns
-Apex_40216 <- separate(Apex_40216,"X1", into=c("Date",NA), sep="</date>", remove=TRUE) # Removes </date>
-Apex_40216 <- separate(Apex_40216,"Date", into=c("Date",NA), sep="<probe>", remove=TRUE) # Removes <probe>
+Apex_2 <- separate(Apex_2,"X1", into=c("Date",NA), sep="</date>", remove=TRUE) # Removes </date>
+Apex_2 <- separate(Apex_2,"Date", into=c("Date",NA), sep="<probe>", remove=TRUE) # Removes <probe>
 
-Apex_40216 <- separate(Apex_40216,"Date", into=c("Date",NA), sep="</record>", remove=TRUE) # Removes second to last row </record>
-Apex_40216 <- separate(Apex_40216,"Date", into=c("Date",NA), sep="</datalog>", remove=TRUE) # Removes last row </datalog>
+Apex_2 <- separate(Apex_2,"Date", into=c("Date",NA), sep="</record>", remove=TRUE) # Removes second to last row </record>
+Apex_2 <- separate(Apex_2,"Date", into=c("Date",NA), sep="</datalog>", remove=TRUE) # Removes last row </datalog>
 
-Apex_40216 <- separate(Apex_40216,"Date", into=c("Date","Probe"), sep="<name>", remove=TRUE) # Date/Time become a new second column separete from other data
-Apex_40216 <- separate(Apex_40216,"Probe",into=c("Probe","Type"), sep="</name> <type>",remove=TRUE) # Splits probe name from other probe data
-Apex_40216 <- separate(Apex_40216,"Type",into=c("Type","Value"), sep="</type><value>",remove=TRUE) # Splits probe type from probe value
-Apex_40216 <- separate(Apex_40216,"Value",into=c("Value",NA), sep="</value></probe>",remove=TRUE) # Removes <probe>
+Apex_2 <- separate(Apex_2,"Date", into=c("Date","Probe"), sep="<name>", remove=TRUE) # Date/Time become a new second column separete from other data
+Apex_2 <- separate(Apex_2,"Probe",into=c("Probe","Type"), sep="</name> <type>",remove=TRUE) # Splits probe name from other probe data
+Apex_2 <- separate(Apex_2,"Type",into=c("Type","Value"), sep="</type><value>",remove=TRUE) # Splits probe type from probe value
+Apex_2 <- separate(Apex_2,"Value",into=c("Value",NA), sep="</value></probe>",remove=TRUE) # Removes <probe>
 
-Apex_40216 <- separate(Apex_40216,"Date", into=c(NA,"Date"), sep="<date>", remove=TRUE) # removes <date>
-Apex_40216 <- fill(Apex_40216,"Date",.direction = c("down")) # Fills in date/time data for all probes/types/values until reaches the next date/time
+Apex_2 <- separate(Apex_2,"Date", into=c(NA,"Date"), sep="<date>", remove=TRUE) # removes <date>
+Apex_2 <- fill(Apex_2,"Date",.direction = c("down")) # Fills in date/time data for all probes/types/values until reaches the next date/time
 
 # Removes all blank columns (values == NA)
-Apex_40216 <- drop_na(Apex_40216)
+Apex_2 <- drop_na(Apex_2)
 
 # Parse date and time
-Apex_40216$Date <- Apex_40216$Date %>%
-  parse_datetime(format = "%m/%d/%Y %H:%M:%S", na=character(),
+Apex_2$Date <- Apex_2$Date %>%
+  parse_datetime(format = "%m/%d/%Y %T", na=character(),
                  locale = default_locale(), trim_ws = TRUE)
 
 # Convert character strings to numeric
-Apex_40216$Value <- Apex_40216$Value %>%
+Apex_2$Value <- Apex_2$Value %>%
   parse_double(na=c("","NA"),locale=default_locale(),trim_ws = TRUE)
 
 # Optional: separate date and time
-#Apex_40216 <- separate(Apex_40216,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
+#Apex_2 <- separate(Apex_2,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
 
 # For bringing in multiple files for the same apex in the same folder (if volume of apex data requires multiple smaller files)
-If(paste0('Data/Apex_DataLogs/',foldername,'/','40216_datalog.csv')=TRUE){
-  Apex_40216_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','40216_datalog.csv'),
+If(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_2_datalog.csv')=TRUE){
+  Apex_2_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_2_datalog.csv'),
                          col_names = TRUE)
-  Apex_40216 <- 
-    union(Apex_40216,Apex_40216_union,by=Date)
-  Apex_40216 <- Apex_40216 %>% arrange(Date)
+  Apex_2 <- 
+    union(Apex_2,Apex_2_union,by=Date)
+  Apex_2 <- Apex_2 %>% arrange(Date)
 }
 
-write_csv(Apex_40216,paste0('Data/Apex_DataLogs/',foldername,'/','40216_datalog.csv'))
+write_csv(Apex_2,paste0('Data/Apex_DataLogs/',foldername,'/','Apex_2_datalog.csv'))
 
 
 ########################
-# Apex 39952, Tanks 9-12
+# Apex_3 39952, Tanks 9-12
 ########################
 
-Apex_39952 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/',Apex_3_filename),
+Apex_3 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/',Apex_3_filename),
                        col_names = FALSE,
                        skip=6)  #skips first 6 rows containing system information
 
 #Splits data into separate columns
-Apex_39952 <- separate(Apex_39952,"X1", into=c("Date",NA), sep="</date>", remove=TRUE) # Removes </date>
-Apex_39952 <- separate(Apex_39952,"Date", into=c("Date",NA), sep="<probe>", remove=TRUE) # Removes <probe>
+Apex_3 <- separate(Apex_3,"X1", into=c("Date",NA), sep="</date>", remove=TRUE) # Removes </date>
+Apex_3 <- separate(Apex_3,"Date", into=c("Date",NA), sep="<probe>", remove=TRUE) # Removes <probe>
 
-Apex_39952 <- separate(Apex_39952,"Date", into=c("Date",NA), sep="</record>", remove=TRUE) # Removes second to last row </record>
-Apex_39952 <- separate(Apex_39952,"Date", into=c("Date",NA), sep="</datalog>", remove=TRUE) # Removes last row </datalog>
+Apex_3 <- separate(Apex_3,"Date", into=c("Date",NA), sep="</record>", remove=TRUE) # Removes second to last row </record>
+Apex_3 <- separate(Apex_3,"Date", into=c("Date",NA), sep="</datalog>", remove=TRUE) # Removes last row </datalog>
 
-Apex_39952 <- separate(Apex_39952,"Date", into=c("Date","Probe"), sep="<name>", remove=TRUE) # Date/Time become a new second column separete from other data
-Apex_39952 <- separate(Apex_39952,"Probe",into=c("Probe","Type"), sep="</name> <type>",remove=TRUE) # Splits probe name from other probe data
-Apex_39952 <- separate(Apex_39952,"Type",into=c("Type","Value"), sep="</type><value>",remove=TRUE) # Splits probe type from probe value
-Apex_39952 <- separate(Apex_39952,"Value",into=c("Value",NA), sep="</value></probe>",remove=TRUE) # Removes <probe>
+Apex_3 <- separate(Apex_3,"Date", into=c("Date","Probe"), sep="<name>", remove=TRUE) # Date/Time become a new second column separete from other data
+Apex_3 <- separate(Apex_3,"Probe",into=c("Probe","Type"), sep="</name> <type>",remove=TRUE) # Splits probe name from other probe data
+Apex_3 <- separate(Apex_3,"Type",into=c("Type","Value"), sep="</type><value>",remove=TRUE) # Splits probe type from probe value
+Apex_3 <- separate(Apex_3,"Value",into=c("Value",NA), sep="</value></probe>",remove=TRUE) # Removes <probe>
 
-Apex_39952 <- separate(Apex_39952,"Date", into=c(NA,"Date"), sep="<date>", remove=TRUE) # removes <date>
-Apex_39952 <- fill(Apex_39952,"Date",.direction = c("down")) # Fills in date/time data for all probes/types/values until reaches the next date/time
+Apex_3 <- separate(Apex_3,"Date", into=c(NA,"Date"), sep="<date>", remove=TRUE) # removes <date>
+Apex_3 <- fill(Apex_3,"Date",.direction = c("down")) # Fills in date/time data for all probes/types/values until reaches the next date/time
 
 # Removes all blank columns (values == NA)
-Apex_39952 <- drop_na(Apex_39952)
+Apex_3 <- drop_na(Apex_3)
 
 # Parse date and time
-Apex_39952$Date <- Apex_39952$Date %>%
-  parse_datetime(format = "%m/%d/%Y %H:%M:%S", na=character(),
+Apex_3$Date <- Apex_3$Date %>%
+  parse_datetime(format = "%m/%d/%Y %T", na=character(),
                  locale = default_locale(), trim_ws = TRUE)
 
 # Convert character strings to numeric
-Apex_39952$Value <- Apex_39952$Value %>%
+Apex_3$Value <- Apex_3$Value %>%
   parse_double(na=c("","NA"),locale=default_locale(),trim_ws = TRUE)
 
 # Optional: separate date and time
-#Apex_39952 <- separate(Apex_39952,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
+#Apex_3 <- separate(Apex_3,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
 
 # For bringing in multiple files for the same apex in the same folder (if volume of apex data requires multiple smaller files)
-If(paste0('Data/Apex_DataLogs/',foldername,'/','39952_datalog.csv')=TRUE){
-  Apex_39952_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','39952_datalog.csv'),
+If(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_3_datalog.csv')=TRUE){
+  Apex_3_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_3_datalog.csv'),
                                col_names = TRUE)
-  Apex_39952 <- 
-    union(Apex_39952,Apex_39952_union,by=Date)
-  Apex_39952 <- Apex_39952 %>% arrange(Date)
+  Apex_3 <- 
+    union(Apex_3,Apex_3_union,by=Date)
+  Apex_3 <- Apex_3 %>% arrange(Date)
 }
 
-write_csv(Apex_39952,paste0('Data/Apex_DataLogs/',foldername,'/','39952_datalog.csv'))
+write_csv(Apex_3,paste0('Data/Apex_DataLogs/',foldername,'/','Apex_3_datalog.csv'))
 
 
 ########################
-# Apex 37810, Tanks 13-16
+# Apex_4 37810, Tanks 13-16
 ########################
 
-Apex_37810 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/',Apex_4_filename),
+Apex_4 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/',Apex_4_filename),
                        col_names = FALSE,
                        skip=6) #skips first 6 rows containing system information
 
 #Splits data into separate columns
-Apex_37810 <- separate(Apex_37810,"X1", into=c("Date",NA), sep="</date>", remove=TRUE) # Removes </date>
-Apex_37810 <- separate(Apex_37810,"Date", into=c("Date",NA), sep="<probe>", remove=TRUE) # Removes <probe>
+Apex_4 <- separate(Apex_4,"X1", into=c("Date",NA), sep="</date>", remove=TRUE) # Removes </date>
+Apex_4 <- separate(Apex_4,"Date", into=c("Date",NA), sep="<probe>", remove=TRUE) # Removes <probe>
 
-Apex_37810 <- separate(Apex_37810,"Date", into=c("Date",NA), sep="</record>", remove=TRUE) # Removes second to last row </record>
-Apex_37810 <- separate(Apex_37810,"Date", into=c("Date",NA), sep="</datalog>", remove=TRUE) # Removes last row </datalog>
+Apex_4 <- separate(Apex_4,"Date", into=c("Date",NA), sep="</record>", remove=TRUE) # Removes second to last row </record>
+Apex_4 <- separate(Apex_4,"Date", into=c("Date",NA), sep="</datalog>", remove=TRUE) # Removes last row </datalog>
 
-Apex_37810 <- separate(Apex_37810,"Date", into=c("Date","Probe"), sep="<name>", remove=TRUE) # Date/Time become a new second column separete from other data
-Apex_37810 <- separate(Apex_37810,"Probe",into=c("Probe","Type"), sep="</name> <type>",remove=TRUE) # Splits probe name from other probe data
-Apex_37810 <- separate(Apex_37810,"Type",into=c("Type","Value"), sep="</type><value>",remove=TRUE) # Splits probe type from probe value
-Apex_37810 <- separate(Apex_37810,"Value",into=c("Value",NA), sep="</value></probe>",remove=TRUE) # Removes <probe>
+Apex_4 <- separate(Apex_4,"Date", into=c("Date","Probe"), sep="<name>", remove=TRUE) # Date/Time become a new second column separete from other data
+Apex_4 <- separate(Apex_4,"Probe",into=c("Probe","Type"), sep="</name> <type>",remove=TRUE) # Splits probe name from other probe data
+Apex_4 <- separate(Apex_4,"Type",into=c("Type","Value"), sep="</type><value>",remove=TRUE) # Splits probe type from probe value
+Apex_4 <- separate(Apex_4,"Value",into=c("Value",NA), sep="</value></probe>",remove=TRUE) # Removes <probe>
 
-Apex_37810 <- separate(Apex_37810,"Date", into=c(NA,"Date"), sep="<date>", remove=TRUE) # removes <date>
-Apex_37810 <- fill(Apex_37810,"Date",.direction = c("down")) # Fills in date/time data for all probes/types/values until reaches the next date/time
+Apex_4 <- separate(Apex_4,"Date", into=c(NA,"Date"), sep="<date>", remove=TRUE) # removes <date>
+Apex_4 <- fill(Apex_4,"Date",.direction = c("down")) # Fills in date/time data for all probes/types/values until reaches the next date/time
 
 # Removes all blank columns (values == NA)
-Apex_37810 <- drop_na(Apex_37810)
+Apex_4 <- drop_na(Apex_4)
 
 # Parse date and time
-Apex_37810$Date <- Apex_37810$Date %>%
-  parse_datetime(format = "%m/%d/%Y %H:%M:%S", na=character(),
+Apex_4$Date <- Apex_4$Date %>%
+  parse_datetime(format = "%m/%d/%Y %T", na=character(),
                  locale = default_locale(), trim_ws = TRUE)
 
 # Convert character strings to numeric
-Apex_37810$Value <- Apex_37810$Value %>%
+Apex_4$Value <- Apex_4$Value %>%
   parse_double(na=c("","NA"),locale=default_locale(),trim_ws = TRUE)
 
 # Optional: separate date and time
-#Apex_37810 <- separate(Apex_37810,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
+#Apex_4 <- separate(Apex_4,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
 
 # For bringing in multiple files for the same apex in the same folder (if volume of apex data requires multiple smaller files)
-If(paste0('Data/Apex_DataLogs/',foldername,'/','37810_datalog.csv')=TRUE){
-  Apex_37810_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','37810_datalog.csv'),
+If(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_4_datalog.csv')=TRUE){
+  Apex_4_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_4_datalog.csv'),
                                col_names = TRUE)
-  Apex_37810 <- 
-    union(Apex_37810,Apex_37810_union,by=Date)
-  Apex_37810 <- Apex_37810 %>% arrange(Date)
+  Apex_4 <- 
+    union(Apex_4,Apex_4_union,by=Date)
+  Apex_4 <- Apex_4 %>% arrange(Date)
 }
 
-write_csv(Apex_37810,paste0('Data/Apex_DataLogs/',foldername,'/','37810_datalog.csv'))
+write_csv(Apex_4,paste0('Data/Apex_DataLogs/',foldername,'/','Apex_4_datalog.csv'))
 
 
 ########################
-# Apex 41239, Tanks 17-20
+# Apex_5 41239, Tanks 17-20
 ########################
 
-Apex_41239 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/',Apex_5_filename),
+Apex_5 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/',Apex_5_filename),
                        col_names = FALSE,
                        skip=6)  #skips first 6 rows containing system information
 
 #Splits data into separate columns
-Apex_41239 <- separate(Apex_41239,"X1", into=c("Date",NA), sep="</date>", remove=TRUE) # Removes </date>
-Apex_41239 <- separate(Apex_41239,"Date", into=c("Date",NA), sep="<probe>", remove=TRUE) # Removes <probe>
+Apex_5 <- separate(Apex_5,"X1", into=c("Date",NA), sep="</date>", remove=TRUE) # Removes </date>
+Apex_5 <- separate(Apex_5,"Date", into=c("Date",NA), sep="<probe>", remove=TRUE) # Removes <probe>
 
-Apex_41239 <- separate(Apex_41239,"Date", into=c("Date",NA), sep="</record>", remove=TRUE) # Removes second to last row </record>
-Apex_41239 <- separate(Apex_41239,"Date", into=c("Date",NA), sep="</datalog>", remove=TRUE) # Removes last row </datalog>
+Apex_5 <- separate(Apex_5,"Date", into=c("Date",NA), sep="</record>", remove=TRUE) # Removes second to last row </record>
+Apex_5 <- separate(Apex_5,"Date", into=c("Date",NA), sep="</datalog>", remove=TRUE) # Removes last row </datalog>
 
-Apex_41239 <- separate(Apex_41239,"Date", into=c("Date","Probe"), sep="<name>", remove=TRUE) # Date/Time become a new second column separete from other data
-Apex_41239 <- separate(Apex_41239,"Probe",into=c("Probe","Type"), sep="</name> <type>",remove=TRUE) # Splits probe name from other probe data
-Apex_41239 <- separate(Apex_41239,"Type",into=c("Type","Value"), sep="</type><value>",remove=TRUE) # Splits probe type from probe value
-Apex_41239 <- separate(Apex_41239,"Value",into=c("Value",NA), sep="</value></probe>",remove=TRUE) # Removes <probe>
+Apex_5 <- separate(Apex_5,"Date", into=c("Date","Probe"), sep="<name>", remove=TRUE) # Date/Time become a new second column separete from other data
+Apex_5 <- separate(Apex_5,"Probe",into=c("Probe","Type"), sep="</name> <type>",remove=TRUE) # Splits probe name from other probe data
+Apex_5 <- separate(Apex_5,"Type",into=c("Type","Value"), sep="</type><value>",remove=TRUE) # Splits probe type from probe value
+Apex_5 <- separate(Apex_5,"Value",into=c("Value",NA), sep="</value></probe>",remove=TRUE) # Removes <probe>
 
-Apex_41239 <- separate(Apex_41239,"Date", into=c(NA,"Date"), sep="<date>", remove=TRUE) # removes <date>
-Apex_41239 <- fill(Apex_41239,"Date",.direction = c("down")) # Fills in date/time data for all probes/types/values until reaches the next date/time
+Apex_5 <- separate(Apex_5,"Date", into=c(NA,"Date"), sep="<date>", remove=TRUE) # removes <date>
+Apex_5 <- fill(Apex_5,"Date",.direction = c("down")) # Fills in date/time data for all probes/types/values until reaches the next date/time
 
 # Removes all blank columns (values == NA)
-Apex_41239 <- drop_na(Apex_41239)
+Apex_5 <- drop_na(Apex_5)
 
 # Parse date and time
-Apex_41239$Date <- Apex_41239$Date %>%
-  parse_datetime(format = "%m/%d/%Y %H:%M:%S", na=character(),
+Apex_5$Date <- Apex_5$Date %>%
+  parse_datetime(format = "%m/%d/%Y %T", na=character(),
                  locale = default_locale(), trim_ws = TRUE)
 
 # Convert character strings to numeric
-Apex_41239$Value <- Apex_41239$Value %>%
+Apex_5$Value <- Apex_5$Value %>%
   parse_double(na=c("","NA"),locale=default_locale(),trim_ws = TRUE)
 
 # Optional: separate date and time
-#Apex_41239 <- separate(Apex_41239,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
+#Apex_5 <- separate(Apex_5,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
 
 # For bringing in multiple files for the same apex in the same folder (if volume of apex data requires multiple smaller files)
-If(paste0('Data/Apex_DataLogs/',foldername,'/','41239_datalog.csv')=TRUE){
-  Apex_41239_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','41239_datalog.csv'),
+If(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_5_datalog.csv')=TRUE){
+  Apex_5_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_5_datalog.csv'),
                                col_names = TRUE)
-  Apex_41239 <- 
-    union(Apex_41239,Apex_41239_union,by=Date)
-  Apex_41239 <- Apex_41239 %>% arrange(Date)
+  Apex_5 <- 
+    union(Apex_5,Apex_5_union,by=Date)
+  Apex_5 <- Apex_5 %>% arrange(Date)
 }
 
-write_csv(Apex_41239,paste0('Data/Apex_DataLogs/',foldername,'/','41239_datalog.csv'))
+write_csv(Apex_5,paste0('Data/Apex_DataLogs/',foldername,'/','Apex_5_datalog.csv'))
 
 
 ########################################
@@ -275,13 +274,13 @@ write_csv(Apex_41239,paste0('Data/Apex_DataLogs/',foldername,'/','41239_datalog.
 
 # union pulls together both data files by their common Date value
 Apex_Full <- 
-  union(Apex_39106,Apex_40216,by=Date)
+  union(Apex_1,Apex_2,by=Date)
 Apex_Full <- 
-  union(Apex_Full,Apex_39952,by=Date)
+  union(Apex_Full,Apex_3,by=Date)
 Apex_Full <- 
-  union(Apex_Full,Apex_37810,by=Date)
+  union(Apex_Full,Apex_4,by=Date)
 Apex_Full <- 
-  union(Apex_Full,Apex_41239,by=Date)
+  union(Apex_Full,Apex_5,by=Date)
 
 # arranges the data by the Date and Time in the Date column
 Apex_Full <- Apex_Full %>% arrange(Date)
@@ -320,3 +319,5 @@ write_csv(Apex_All,paste0('Data/Apex_DataLogs/','Apex_Full_Datalog.csv'))
 Apex_pH <- Apex_All %>%
   filter(Type %in% c("Temp", "pH"))
 write_csv(Apex_pH,paste0('Data/Apex_DataLogs/','Apex_temp_pH_Datalog.csv'))
+
+

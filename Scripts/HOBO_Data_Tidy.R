@@ -254,7 +254,7 @@ Hobo_All <- merge(x = Tnk3, y = Hobo_All, by = "Date Time, GMT -0700", all = TRU
 Hobo_All <- merge(x = Tnk2, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
 Hobo_All <- merge(x = Tnk1, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
 # Split Date and Time into separate columns
-Hobo_All <- separate(Hobo_All,"Date Time, GMT -0700", into=c("Date","Time"), sep = " ", remove = TRUE)
+#Hobo_All <- separate(Hobo_All,"Date Time, GMT -0700", into=c("Date","Time"), sep = " ", remove = TRUE)
 View(Hobo_All)
 
 ############## save data file
