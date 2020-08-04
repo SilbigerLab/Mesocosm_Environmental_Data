@@ -6,14 +6,14 @@ library(tidyverse)
 ########################
 # File Names
 ########################
-foldername<-'20200802' # folder of the day
-date<-'20200802' # today's date
+foldername<-'20200803' # folder of the day
+date<-'20200803' # today's date
 Apex_All_Datalogs<-'Apex_Full_Datalog.csv' # Long-term historical data set
-Apex_1_filename<-'datalog_1_200731d2.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
-Apex_2_filename<-'datalog_2_200731d2.csv' # data from Apex 40216
-Apex_3_filename<-'datalog_3_200731d2.csv' # data from Apex 39952
-Apex_4_filename<-'datalog_4_200731d2.csv' # data from Apex 37810
-Apex_5_filename<-'datalog_5_200731d2.csv' # data from Apex 41239
+Apex_1_filename<-'datalog_1_200803d1.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
+Apex_2_filename<-'datalog_2_200803d1.csv' # data from Apex 40216
+Apex_3_filename<-'datalog_3_200803d1.csv' # data from Apex 39952
+Apex_4_filename<-'datalog_4_200803d1.csv' # data from Apex 37810
+Apex_5_filename<-'datalog_5_200803d1.csv' # data from Apex 41239
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
@@ -272,6 +272,13 @@ write_csv(Apex_5,paste0('Data/Apex_DataLogs/',foldername,'/','Apex_5_datalog.csv
 # Join all files together into Apex_Full and Apex_All
 ########################################
 
+# load apex data files
+Apex_1 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/Apex_1_datalog.csv'))
+Apex_2 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/Apex_2_datalog.csv'))
+Apex_3 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/Apex_3_datalog.csv'))
+Apex_4 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/Apex_4_datalog.csv'))
+Apex_5 <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/Apex_5_datalog.csv'))
+
 # union pulls together both data files by their common Date value
 Apex_Full <- 
   union(Apex_1,Apex_2,by=Date)
@@ -314,10 +321,10 @@ Apex_All <- Apex_All %>% arrange(Date) # or
 #Apex_Full <- Apex_Full %>% arrange(Probe)
 #View(Apex_All)
 
-write_csv(Apex_All,paste0('Data/Apex_DataLogs/','Apex_Full_Datalog.csv'))
+write_csv(Apex_All,paste0('Data/Apex_DataLogs/Apex_Full_Datalog.csv'))
 
 Apex_pH <- Apex_All %>%
   filter(Type %in% c("Temp", "pH"))
-write_csv(Apex_pH,paste0('Data/Apex_DataLogs/','Apex_temp_pH_Datalog.csv'))
+write_csv(Apex_pH,paste0('Data/Apex_DataLogs/Apex_temp_pH_Datalog.csv'))
 
 

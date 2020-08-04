@@ -2,30 +2,31 @@ rm(list=ls())
 library(tidyverse)
 
 # change the dated folder only
-foldername<-'Data/HOBO_loggers/20200731/'
-folder_date<-'20200731'
+foldername<-'Data/HOBO_loggers/20200803/'
+folder_date<-'20200803'
 
 # filenames for each tank
-Tank1 <- 'TNK-1-SN20569922 2020-07-31 14_43_03 -0700.csv'
-Tank2 <- 'TNK-2-SN20565250 2020-07-31 14_43_49 -0700.csv'
-Tank3 <- 'TNK-3-SN20565253 2020-07-31 14_44_33 -0700.csv'
-Tank4 <- 'TNK-4-SN20565252 2020-07-31 14_45_08 -0700.csv'
-Tank5 <- 'TNK-5-SN20555838 2020-07-31 14_47_33 -0700.csv'
-Tank6 <- 'TNK-6-20565254 2020-07-31 14_48_14 -0700.csv'
-Tank7 <- 'TNK-7-SN20565255 2020-07-31 14_48_50 -0700.csv'
-Tank8 <- 'TNK-8-SN20714139 2020-07-31 14_49_32 -0700.csv'
-Tank9 <- 'TNK-9-SN20565257 2020-07-31 14_50_24 -0700.csv'
-Tank10 <- 'TNK-10-SN20565258 2020-07-31 14_50_55 -0700.csv'
-Tank11 <- 'TNK-11-SN20565259 2020-07-31 15_04_16 -0700.csv'
-Tank12 <- 'TNK-12-SN20714140 2020-07-31 15_04_49 -0700.csv'
-Tank13 <- 'TNK-13-SN20565261 2020-07-31 15_05_38 -0700.csv'
-Tank14 <- 'TNK-14-SN20565262 2020-07-31 15_06_13 -0700.csv'
-Tank15 <- 'TNK-15-SN20565263 2020-07-31 15_06_50 -0700.csv'
-Tank16 <- 'TNK-16-SN20714141 2020-07-31 15_07_33 -0700.csv'
-Tank17 <- 'TNK-17-SN20565265 2020-07-31 15_08_16 -0700.csv'
-Tank18 <- 'TNK-18-SN20569983 2020-07-31 15_08_51 -0700.csv'
-Tank19 <- 'TNK-19-SN20714142 2020-07-31 15_09_46 -0700.csv'
-Tank20 <- 'TNK-20-SN20714143 2020-07-31 15_10_25 -0700.csv'
+Tank1 <- 'TNK-1-SN20569922 2020-08-04 12_51_33 -0700.csv'
+Tank2 <- 'TNK-2-SN20565250 2020-08-04 12_51_59 -0700.csv'
+Tank3 <- 'TNK-3-SN20565253 2020-08-04 12_52_27 -0700.csv'
+Tank4 <- 'TNK-4-SN20565252 2020-08-04 12_52_52 -0700.csv'
+Tank5 <- 'TNK-5-SN20555838 2020-08-04 12_56_16 -0700.csv'
+Tank6 <- 'TNK-6-20565254 2020-08-04 12_57_32 -0700.csv'
+Tank7 <- 'TNK-7-SN20565255 2020-08-04 12_59_02 -0700.csv'
+Tank8 <- 'TNK-8-SN20714139 2020-08-04 12_59_35 -0700.csv'
+Tank9 <- 'TNK-9-SN20565257 2020-08-04 13_02_51 -0700.csv'
+Tank10 <- 'TNK-10-SN20565258 2020-08-04 13_03_17 -0700.csv'
+Tank11 <- 'TNK-11-SN20565259 2020-08-04 13_03_55 -0700.csv'
+Tank12 <- 'TNK-12-SN20714140 2020-08-04 13_04_25 -0700.csv'
+Tank13 <- 'TNK-13-SN20565261 2020-08-04 13_07_03 -0700.csv'
+Tank14 <- 'TNK-14-SN20565262 2020-08-04 13_07_28 -0700.csv'
+Tank15 <- 'TNK-15-SN20565263 2020-08-04 13_07_56 -0700.csv'
+Tank16 <- 'TNK-16-SN20714141 2020-08-04 13_08_21 -0700.csv'
+Tank17 <- 'TNK-17-SN20565265 2020-08-04 13_10_36 -0700.csv'
+Tank18 <- 'TNK-18-SN20569983 2020-08-04 13_11_04 -0700.csv'
+Tank19 <- 'TNK-19-SN20714142 2020-08-04 13_11_45 -0700.csv'
+Tank20 <- 'TNK-20-SN20714143 2020-08-04 13_12_19 -0700.csv' 
+# If not reading in data for Tank 20, Run script up to Merge section, then follow instructions
 
 ########################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ---------------
@@ -231,29 +232,74 @@ Tnk20 <- drop_na(Tnk20)
 Tnk20 <- Tnk20 %>%
   rename(Tnk20_TmpC = `Temp, (*C)`)
 }
-##############
+##################
+# Merge Data
+##################
 
 # Merge all Temp data into one dataframe
-# If not using tank, put # in front of it to omit
-Hobo_All <- merge(x = Tnk19, y = Tnk20, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk18, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk17, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk16, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk15, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk14, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk13, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk12, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk11, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk10, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk9, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk8, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk7, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk6, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk5, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk4, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk3, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk2, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
-Hobo_All <- merge(x = Tnk1, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+
+# If not using tank 20, update line 243 to assign the last tank with recorded data to Hobo_All,
+# then skip to the next merge line for the tank number AFTER the tank recorded in line 243. Run the rest of the script.
+If(exists(Tnk20)){
+  Hobo_All <- Tnk20
+  }
+If(exists(Tnk19)){
+  Hobo_All <- merge(x = Tnk19, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk18)){
+  Hobo_All <- merge(x = Tnk18, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk17)){
+  Hobo_All <- merge(x = Tnk17, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk16)){
+  Hobo_All <- merge(x = Tnk16, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+}
+If(exists(Tnk15)){
+  Hobo_All <- merge(x = Tnk15, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk14)){Hobo_All <- merge(x = Tnk14, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+}
+If(exists(Tnk13)){
+  Hobo_All <- merge(x = Tnk13, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk12)){
+  Hobo_All <- merge(x = Tnk12, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk11)){
+  Hobo_All <- merge(x = Tnk11, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk10)){
+  Hobo_All <- merge(x = Tnk10, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk9)){
+  Hobo_All <- merge(x = Tnk9, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk8)){
+  Hobo_All <- merge(x = Tnk8, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk7)){
+  Hobo_All <- merge(x = Tnk7, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk6)){
+  Hobo_All <- merge(x = Tnk6, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk5)){
+  Hobo_All <- merge(x = Tnk5, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk4)){
+  Hobo_All <- merge(x = Tnk4, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk3)){
+  Hobo_All <- merge(x = Tnk3, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk2)){
+  Hobo_All <- merge(x = Tnk2, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+If(exists(Tnk1)){
+  Hobo_All <- merge(x = Tnk1, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
+  }
+
 # Split Date and Time into separate columns
 #Hobo_All <- separate(Hobo_All,"Date Time, GMT -0700", into=c("Date","Time"), sep = " ", remove = TRUE)
 View(Hobo_All)
