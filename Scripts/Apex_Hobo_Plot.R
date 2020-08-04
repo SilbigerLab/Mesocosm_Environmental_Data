@@ -1,18 +1,27 @@
 # Plot Apex against Hobo Data
 
+# clean environment
+rm(list=ls())
+
+# Load libraries
+library(tidyverse)
+library(ggplot2)
+library(lubridate)
+library(plotrix)
+
 ######################
 
-date<-"20200802" # Output folder name
+folder.date<-"20200803" # Output folder name
 
 ######################
 ######################
 
-hobolog<-read_csv("Data/HOBO_loggers/20200731/HOBOLog_20200731.csv")
+hobolog<-read_csv("Data/HOBO_loggers/20200803/HOBOLog_20200803.csv")
 # start date and time of data logging
 startLog<-parse_datetime("2020-07-30 01:00:00",format = "%F %T", na=character(),
                          locale = locale(tz = ""), trim_ws = TRUE)
 # end date and time of data logging
-endLog<-parse_datetime("2020-07-31 14:43:00",format = "%F %T", na=character(),
+endLog<-parse_datetime("2020-08-04 12:51:00",format = "%F %T", na=character(),
                        locale = locale(tz = ""), trim_ws = TRUE)
 # rename for simpler column management
 hobolog<-hobolog%>%
@@ -87,13 +96,11 @@ datalog<-rbind(apexlog,hobolog)
 datalog<-datalog%>%
   arrange(Date)
 
-View(hobolog)
-View(apexlog)
-
+# plot apex and hobo facet graphs
 plots<-ggplot(data=datalog, aes(x=Date, y=mean, colour=Source))+
   geom_line(aes(colour=Source))+
   facet_wrap(ncol=1,~Treatment, scales="free_y")+
   labs(x="Date",y="Mean TempC")+
-  ggsave(paste0("Output/",date,"/Treatment_Facet.png"))
+  ggsave(paste0("Output/",folder.date,"/Treatment_Facet.png"))
 plots
 
