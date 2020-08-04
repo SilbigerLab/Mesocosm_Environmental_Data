@@ -234,6 +234,7 @@ Tnk20 <- Tnk20 %>%
 ##############
 
 # Merge all Temp data into one dataframe
+# If not using tank, put # in front of it to omit
 Hobo_All <- merge(x = Tnk19, y = Tnk20, by = "Date Time, GMT -0700", all = TRUE)
 Hobo_All <- merge(x = Tnk18, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
 Hobo_All <- merge(x = Tnk17, y = Hobo_All, by = "Date Time, GMT -0700", all = TRUE)
