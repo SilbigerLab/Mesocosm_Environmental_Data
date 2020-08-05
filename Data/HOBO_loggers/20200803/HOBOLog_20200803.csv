@@ -1,4 +1,4 @@
-Date,Tnk1_TmpC,Tnk2_TmpC,Tnk3_TmpC,Tnk4_TmpC,Tnk5_TmpC,"Intensity, ( lux)",Tnk6_TmpC,Tnk7_TmpC,Tnk8_TmpC,Tnk9_TmpC,Tnk10_TmpC,Tnk11_TmpC,Tnk12_TmpC,Tnk13_TmpC,Tnk14_TmpC,Tnk15_TmpC,Tnk16_TmpC,Tnk17_TmpC,Tnk18_TmpC,Tnk19_TmpC,Tnk20_TmpC
+Date,Hobo-Tmp-1,Hobo-Tmp-2,Hobo-Tmp-3,Hobo-Tmp-4,Hobo-Tmp-5,"Intensity, ( lux)",Hobo-Tmp-6,Hobo-Tmp-7,Hobo-Tmp-8,Hobo-Tmp-9,Hobo-Tmp-10,Hobo-Tmp-11,Hobo-Tmp-12,Hobo-Tmp-13,Hobo-Tmp-14,Hobo-Tmp-15,Hobo-Tmp-16,Hobo-Tmp-17,Hobo-Tmp-18,Hobo-Tmp-19,Hobo-Tmp-20
 2020-07-24T16:34:00Z,17.74,NA,17.54,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 2020-07-24T16:35:00Z,17.87,NA,17.56,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 2020-07-24T16:36:00Z,17.81,17.5,17.58,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

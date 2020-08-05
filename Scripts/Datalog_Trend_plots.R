@@ -87,26 +87,31 @@ meanlog<-datalog%>%
 # All treatments
 plot1<-ggplot(data=datalog, aes(x=Date, y=Value, colour=Probe))+
   geom_line()+
+  theme_bw()+
   facet_wrap(ncol=1,~Treatment, scales="free_y")+
   labs(x="Date",y="TempC",title="Raw Apex Temperatures per Treatment")+
-  ggsave(paste0("Output/",folder.date,"/Apex_rawValues_perTreatment_plot.png"))
+  ggsave(paste0("Output/",folder.date,"/Apex_rawValues_perTreatment_plot.png"),width=11,height=7)
 # By treatment
 plot2<-ggplot(data=Am.stable, aes(x=Date, y=Value, colour=Probe))+
   geom_line()+
+  theme_bw()+
   labs(x="Date",y="TempC",title="Raw Apex Temperatures",subtitle="Ambient Stable Treatment")+
-  ggsave(paste0("Output/",folder.date,"/Apex_Ambient_Stable_plot.png"))
+  ggsave(paste0("Output/",folder.date,"/Apex_Ambient_Stable_plot.png"),width=11,height=6)
 plot3<-ggplot(data=El.stable, aes(x=Date, y=Value, colour=Probe))+
   geom_line()+
+  theme_bw()+
   labs(x="Date",y="TempC",title="Raw Apex Temperatures",subtitle="Elevated Stable Treatment")+
-  ggsave(paste0("Output/",folder.date,"/Apex_Elevated_Stable_plot.png"))
+  ggsave(paste0("Output/",folder.date,"/Apex_Elevated_Stable_plot.png"),width=11,height=6)
 plot4<-ggplot(data=Am.oc, aes(x=Date, y=Value, colour=Probe))+
   geom_line()+
+  theme_bw()+
   labs(x="Date",y="TempC",title="Raw Apex Temperatures",subtitle="Ambient Oscillating Treatment")+
-  ggsave(paste0("Output/",folder.date,"/Apex_Ambient_Oscillating_plot.png"))
+  ggsave(paste0("Output/",folder.date,"/Apex_Ambient_Oscillating_plot.png"),width=11,height=6)
 plot5<-ggplot(data=El.oc, aes(x=Date, y=Value, colour=Probe))+
   geom_line()+
+  theme_bw()+
   labs(x="Date",y="TempC",title="Raw Apex Temperatures",subtitle="Elevated Oscillating Treatment")+
-  ggsave(paste0("Output/",folder.date,"/Apex_Elevated_Oscillating_plot.png"))
+  ggsave(paste0("Output/",folder.date,"/Apex_Elevated_Oscillating_plot.png"),width=11,height=6)
 
 
 #####################
@@ -114,16 +119,17 @@ plot5<-ggplot(data=El.oc, aes(x=Date, y=Value, colour=Probe))+
 #####################
 # Without Error Bars
 plot6<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
-  geom_line(aes(colour=Treatment))+
+  geom_line()+
+  theme_bw()+
   facet_wrap(ncol=1,~Treatment+Type, scales="free_y")+
   labs(x="Date",y="Mean TempC",title="Mean Apex Temperatures per Treatment",subtitle="Without Standard Error")+
-  ggsave(paste0("Output/",folder.date,"/Apex_meanValues_perTreatment_noSE_plot.png"))
+  ggsave(paste0("Output/",folder.date,"/Apex_meanValues_perTreatment_noSE_plot.png"),width=11,height=7)
 # With Error Bars
 plot7<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
-  geom_line(aes(colour=Treatment))+
+  geom_line()+
+  theme_bw()+
   geom_errorbar(aes(ymin=mean-SE,ymax=mean+SE),width=0.2,position="identity")+
   facet_wrap(ncol=1,~Treatment+Type, scales="free_y")+
   labs(x="Date",y="Mean TempC",title="Mean Apex Temperatures per Treatment",subtitle="With Standard Error")+
-  ggsave(paste0("Output/",folder.date,"/Apex_meanValues_perTreatment_SE_plot.png"))
-
+  ggsave(paste0("Output/",folder.date,"/Apex_meanValues_perTreatment_SE_plot.png"),width=11,height=7)
 
