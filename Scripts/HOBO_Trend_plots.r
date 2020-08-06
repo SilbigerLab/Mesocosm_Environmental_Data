@@ -12,32 +12,32 @@ library(plotrix)
 #####################
 # Load data
 #####################
-datalog<-read_csv("Data/HOBO_loggers/20200731/HOBOLog_20200731.csv")
-date<- "20200731" # today's date (used for Output folder)
+folder.date<- "20200803"
+datalog<-read_csv(paste0("Data/HOBO_loggers/",folder.date,"/HOBOLog_20200803.csv"),na=(c("NA", "")))
+
+datalog<-datalog%>%
+  select(-c('Intensity, ( lux)',Tmp-6,Tmp-11))
 
 # start date and time of data logging
-startLog<-parse_datetime("2020-07-30 01:00:00",format = "%F %T", na=character(),
-               locale = locale(tz = ""), trim_ws = TRUE)
+startLog<-parse_datetime("2020-07-30 01:00:00",format = "%Y-%m-%d %H:%M:%S", na=character(),
+                         locale = locale(tz = ""), trim_ws = TRUE)
 # end date and time of data logging
-endLog<-parse_datetime("2020-07-31 14:43:00",format = "%F %T", na=character(),
-               locale = locale(tz = ""), trim_ws = TRUE)
+endLog<-parse_datetime("2020-08-04 14:43:00",format = "%Y-%m-%d %H:%M:%S", na=character(),
+                       locale = locale(tz = ""), trim_ws = TRUE)
 
-# rename for simpler column management
-datalog<-datalog%>%
-  rename(Date_time='Date Time, GMT -0700')
 # parse date_time to POSIXct
-datalog$Date_time<-datalog$Date_time%>%
+datalog$Date<-datalog$Date%>%
   as.POSIXct(format = "%F %T", na=character(), tz="",
                  locale = locale(tz = ""), trim_ws = TRUE)
 # filter out "test time" data
 datalog<-datalog%>%
-  filter((Date_time>=startLog) & (Date_time<=endLog))
+  filter((Date>=startLog) & (Date<=endLog))
 # hobos are logging time at GMT-7 while Apex's reading GMT-8
-datalog$Date_time<-datalog$Date_time + hours(1)
+datalog$Date<-datalog$Date + hours(1)
 
 # Create long-form dataframe from datalog
 datalog<-datalog%>%
-  pivot_longer(cols = -c(Date_time), names_to = "Tank",values_to = "Temp_C",values_drop_na = TRUE)
+  pivot_longer(cols = -c(Date), names_to = "Tank",values_to = "Value",values_drop_na = TRUE)
 
 
 #####################
@@ -58,38 +58,64 @@ El.oc<-datalog%>% # elevated temperature oscillations
 
 # bind all rows to combine treatment data and summarise data by Date and Treatment
 datalog<-Am.stable%>%
-  rbind(El.stable,Am.oc,El.oc)%>% # combine all treatment data
-  arrange(Date_time)%>%
-  group_by(Date_time,Treatment)%>%
-  summarise(mean=mean(Temp_C),SE=std.error(Temp_C)) #create columns for mean and standard error of remaining data
+  rbind(El.stable,Am.oc,El.oc)%>%
+  arrange(Date)
+meanlog<-datalog%>%
+  group_by(Date,Treatment)%>%
+  summarise(mean=mean(Value),SE=std.error(Value))
 
 
 #####################
-# plotting the data
+# Plotting Raw Treatment Plots
 #####################
-plot1<-ggplot(data=datalog, aes(x=Date_time, y=mean, colour=Treatment))+
-  geom_line(aes(colour=Treatment))+
+# All treatments
+plot1<-ggplot(data=datalog, aes(x=Date, y=Value, colour=Tank))+
+  geom_line()+
+  theme_bw()+
   facet_wrap(ncol=1,~Treatment, scales="free_y")+
-  labs(x="Date",y="Mean TempC")+
-  ggsave(paste0("Output/",date,"/HOBO_TreatmentPlots_faceted.png"))
-plot1
+  labs(x="Date",y="TempC",title="Raw Hobo Temperatures per Treatment")+
+  ggsave(paste0("Output/",folder.date,"/Hobo_rawValues_perTreatment_plot.png"),width=11,height=7)
+# By treatment
+plot2<-ggplot(data=Am.stable, aes(x=Date, y=Value, colour=Tank))+
+  geom_line()+
+  theme_bw()+
+  labs(x="Date",y="TempC",title="Raw Hobo Temperatures",subtitle="Ambient Stable Treatment")+
+  ggsave(paste0("Output/",folder.date,"/Hobo_Ambient_Stable_plot.png"),width=11,height=6)
+plot3<-ggplot(data=El.stable, aes(x=Date, y=Value, colour=Tank))+
+  geom_line()+
+  theme_bw()+
+  labs(x="Date",y="TempC",title="Raw Hobo Temperatures",subtitle="Elevated Stable Treatment")+
+  ggsave(paste0("Output/",folder.date,"/Hobo_Elevated_Stable_plot.png"),width=11,height=6)
+plot4<-ggplot(data=Am.oc, aes(x=Date, y=Value, colour=Tank))+
+  geom_line()+
+  theme_bw()+
+  labs(x="Date",y="TempC",title="Raw Hobo Temperatures",subtitle="Ambient Oscillating Treatment")+
+  ggsave(paste0("Output/",folder.date,"/Hobo_Ambient_Oscillating_plot.png"),width=11,height=6)
+plot5<-ggplot(data=El.oc, aes(x=Date, y=Value, colour=Tank))+
+  geom_line()+
+  theme_bw()+
+  labs(x="Date",y="TempC",title="Raw Hobo Temperatures",subtitle="Elevated Oscillating Treatment")+
+  ggsave(paste0("Output/",folder.date,"/Hobo_Elevated_Oscillating_plot.png"),width=11,height=6)
 
-plot2<-ggplot(data=datalog, aes(x=Date_time, y=mean, colour=Treatment))+
-  geom_line(aes(colour=Treatment))+
-  geom_errorbar(aes(ymin=mean-SE,ymax=mean+SE),width=0.1,position="identity")+
+
+#####################
+# Plotting Mean Treatment Plots
+#####################
+# Without Error Bars
+plot6<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
+  geom_line()+
+  theme_bw()+
   facet_wrap(ncol=1,~Treatment, scales="free_y")+
-  labs(x="Date",y="Mean TempC")
-plot2
+  labs(x="Date",y="Mean TempC",
+       title="Mean Hobo Temperatures per Treatment",subtitle="Without Standard Error")+
+  ggsave(paste0("Output/",folder.date,"/Hobo_meanValues_perTreatment_noSE_plot.png"),width=11,height=7)
+# With Error Bars
+plot7<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
+  geom_line()+
+  theme_bw()+
+  geom_errorbar(aes(ymin=mean-SE,ymax=mean+SE),width=0.2,position="identity")+
+  facet_wrap(ncol=1,~Treatment, scales="free_y")+
+  labs(x="Date",y="Mean TempC",title="Mean Hobo Temperatures per Treatment",subtitle="With Standard Error")+
+  ggsave(paste0("Output/",folder.date,"/Hobo_meanValues_perTreatment_SE_plot.png"),width=11,height=7)
 
-plot3<-ggplot(data=datalog, aes(x=Date_time, y=mean, colour=Treatment))+
-  geom_line(aes(colour=Treatment))+
-  labs(x="Date",y="Mean TempC")+
-  ggsave(paste0("Output/",date,"/HOBO_TreatmentPlot.png"))
-plot3
-
-plot4<-ggplot(data=datalog, aes(x=Date_time, y=mean, colour=Treatment))+
-  geom_line(aes(colour=Treatment))+
-  geom_errorbar(aes(ymin=mean-SE,ymax=mean+SE),width=0.1,position="identity")+
-  labs(x="Date",y="Mean TempC")
-plot4
 

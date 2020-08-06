@@ -14,18 +14,20 @@ library(plotrix)
 folder.date<-"20200803" # Output folder name
 
 ######################
+# Load Hobo Data
 ######################
 
-hobolog<-read_csv("Data/HOBO_loggers/20200803/HOBOLog_20200803.csv")
+hobolog<-read_csv(paste0("Data/HOBO_loggers/",folder.date,"/HOBOLog_20200803.csv"),na=(c("NA", "")))
+hobolog<-hobolog%>%
+  select(-c('Intensity, ( lux)','Hobo-Tmp-6','Hobo-Tmp-11'))
+
 # start date and time of data logging
 startLog<-parse_datetime("2020-07-30 01:00:00",format = "%F %T", na=character(),
                          locale = locale(tz = ""), trim_ws = TRUE)
 # end date and time of data logging
-endLog<-parse_datetime("2020-08-04 12:51:00",format = "%F %T", na=character(),
+endLog<-parse_datetime("2020-08-04 12:50:00",format = "%F %T", na=character(),
                        locale = locale(tz = ""), trim_ws = TRUE)
-# rename for simpler column management
-hobolog<-hobolog%>%
-  rename(Date='Date Time, GMT -0700')
+
 # parse date_time to POSIXct
 hobolog$Date<-hobolog$Date%>%
   as.POSIXct(format = "%F %T", na=character(), tz="", locale = locale(tz = ""), trim_ws = TRUE)
@@ -34,30 +36,36 @@ hobolog<-hobolog%>%
   filter((Date>=startLog) & (Date<=endLog))
 # Create long-form dataframe from datalog
 hobolog<-hobolog%>%
-  pivot_longer(cols = -c(Date), names_to = "Tank",values_to = "Temp_C",values_drop_na = TRUE)
-# split data by treatment type
-Am.stable<-hobolog%>% # ambient stable temperature
-  filter((Tank=="Tnk1_TmpC"|Tank=="Tnk5_TmpC"|Tank=="Tnk9_TmpC"|Tank=="Tnk13_TmpC"|Tank=="Tnk17_TmpC"))%>%
+  pivot_longer(cols = -c(Date), names_to = "Tank",values_to = "Value",values_drop_na = TRUE)%>%
+  mutate(Type="Temp")
+
+#####################
+# split Hobo data by treatment type
+#####################
+h.Am.stable<-hobolog%>% # ambient stable temperature
+  filter((Tank=="Hobo-Tmp-1"|Tank=="Hobo-Tmp-5"|Tank=="Hobo-Tmp-9"|Tank=="Hobo-Tmp-13"|Tank=="Hobo-Tmp-17"))%>%
   mutate(Treatment="Ambient.Stable")
-El.stable<-hobolog%>% # elevated stable temperature
-  filter((Tank=="Tnk2_TmpC"|Tank=="Tnk6_TmpC"|Tank=="Tnk10_TmpC"|Tank=="Tnk14_TmpC"|Tank=="Tnk18_TmpC"))%>%
+h.El.stable<-hobolog%>% # elevated stable temperature
+  filter((Tank=="Hobo-Tmp-2"|Tank=="Hobo-Tmp-6"|Tank=="Hobo-Tmp-10"|Tank=="Hobo-Tmp-14"|Tank=="Hobo-Tmp-18"))%>%
   mutate(Treatment="Elevated.Stable")
-Am.oc<-hobolog%>% # ambient temperature oscillations
-  filter((Tank=="Tnk3_TmpC"|Tank=="Tnk7_TmpC"|Tank=="Tnk11_TmpC"|Tank=="Tnk15_TmpC"|Tank=="Tnk19_TmpC"))%>%
+h.Am.oc<-hobolog%>% # ambient temperature oscillations
+  filter((Tank=="Hobo-Tmp-3"|Tank=="Hobo-Tmp-7"|Tank=="Hobo-Tmp-11"|Tank=="Hobo-Tmp-15"|Tank=="Hobo-Tmp-19"))%>%
   mutate(Treatment="Ambient.Oscillating")
-El.oc<-hobolog%>% # elevated temperature oscillations
-  filter((Tank=="Tnk4_TmpC"|Tank=="Tnk8_TmpC"|Tank=="Tnk12_TmpC"|Tank=="Tnk16_TmpC"|Tank=="Tnk20_TmpC"))%>%
+h.El.oc<-hobolog%>% # elevated temperature oscillations
+  filter((Tank=="Hobo-Tmp-4"|Tank=="Hobo-Tmp-8"|Tank=="Hobo-Tmp-12"|Tank=="Hobo-Tmp-16"|Tank=="Hobo-Tmp-20"))%>%
   mutate(Treatment="Elevated.Oscillating")
 # bind all rows to combine treatment data and summarise data by Date and Treatment
-hobolog<-Am.stable%>%
-  rbind(El.stable,Am.oc,El.oc)%>% # combine all treatment data
+hobolog<-h.Am.stable%>%
+  rbind(h.El.stable,h.Am.oc,h.El.oc)%>%
   arrange(Date)%>%
-  group_by(Date,Treatment)%>%
-  summarise(mean=mean(Temp_C),SE=std.error(Temp_C))%>% #create columns for mean and standard error of remaining data
   mutate(Source="HOBO")
+hobomean<-hobolog%>%
+  group_by(Date,Type,Treatment,Source)%>%
+  summarise(mean=mean(Value),SE=std.error(Value))
 
 
 ######################
+# Load Apex Data
 ######################
 
 apexlog<-read_csv("Data/Apex_DataLogs/Apex_temp_pH_Datalog.csv")
@@ -67,40 +75,134 @@ apexlog<-apexlog%>%
 # Parse Date Time column to POSIX
 apexlog$Date<-apexlog$Date%>%
   parse_datetime(format = "%Y-%m-%d %H:%M:%S", na=character(),locale = default_locale(), trim_ws = TRUE)
-# categorize treatments, separated by Probes
-Am.stable<-apexlog%>% # ambient stable temperature
-  filter((Probe=="Tmp-1"|Probe=="Tmp-5"|Probe=="Tmp-9"|Probe=="Tmp-13"|Probe=="Tmp-17"))%>%
+apexlog<-apexlog%>%
+  filter((Date>=startLog) & (Date<=endLog))%>%
+  rename(Tank="Probe")
+  
+
+apexlog<-apexlog%>%
+  filter(Tank!="Tmp-6")
+apexlog<-apexlog%>%
+  filter(Tank!="Tmp-11")
+
+#####################
+# split Apex data by treatment type
+#####################
+a.Am.stable<-apexlog%>% # ambient stable temperature
+  filter((Tank=="Tmp-1"|Tank=="Tmp-5"|Tank=="Tmp-9"|Tank=="Tmp-13"|Tank=="Tmp-17"))%>%
   mutate(Treatment="Ambient.Stable")
-El.stable<-apexlog%>% # elevated stable temperature
-  filter((Probe=="Tmp-2"|Probe=="Tmp-6"|Probe=="Tmp-10"|Probe=="Tmp-14"|Probe=="Tmp-18"))%>%
+a.El.stable<-apexlog%>% # elevated stable temperature
+  filter((Tank=="Tmp-2"|Tank=="Tmp-6"|Tank=="Tmp-10"|Tank=="Tmp-14"|Tank=="Tmp-18"))%>%
   mutate(Treatment="Elevated.Stable")
-Am.oc<-apexlog%>% # ambient temperature oscillations
-  filter((Probe=="Tmp-3"|Probe=="Tmp-7"|Probe=="Tmp-11"|Probe=="Tmp-15"|Probe=="Tmp-19"))%>%
+a.Am.oc<-apexlog%>% # ambient temperature oscillations
+  filter((Tank=="Tmp-3"|Tank=="Tmp-7"|Tank=="Tmp-11"|Tank=="Tmp-15"|Tank=="Tmp-19"))%>%
   mutate(Treatment="Ambient.Oscillating")
-El.oc<-apexlog%>% # elevated temperature oscillations
-  filter((Probe=="Tmp-4"|Probe=="Tmp-8"|Probe=="Tmp-12"|Probe=="Tmp-16"|Probe=="Tmp-20"))%>%
+a.El.oc<-apexlog%>% # elevated temperature oscillations
+  filter((Tank=="Tmp-4"|Tank=="Tmp-8"|Tank=="Tmp-12"|Tank=="Tmp-16"|Tank=="Tmp-20"))%>%
   mutate(Treatment="Elevated.Oscillating")
 # bind all rows to combine treatment data, summarise data by Date, Type, and Treatment, and filter by date
-apexlog<-Am.stable%>%
-  rbind(El.stable,Am.oc,El.oc)%>%
+apexlog<-a.Am.stable%>%
+  rbind(a.El.stable,a.Am.oc,a.El.oc)%>%
   arrange(Date)%>%
-  group_by(Date,Type,Treatment)%>%
-  summarise(mean=mean(Value),SE=std.error(Value))%>%
-  filter((Date>=startLog) & (Date<=endLog))%>%
   mutate(Source="Apex")
+apexmean<-apexlog%>%
+  group_by(Date,Type,Treatment,Source)%>%
+  summarise(mean=mean(Value),SE=std.error(Value))
 
-######################
-######################
 
-datalog<-rbind(apexlog,hobolog)
-datalog<-datalog%>%
+#####################
+# combine apex and hobo data
+#####################
+
+datalog<-rbind(apexlog,hobolog)%>%
+  arrange(Date)
+meanlog<-rbind(apexmean,hobomean)%>%
+  arrange(Date)
+Am.stable<-rbind(h.Am.stable,a.Am.stable)%>%
+  arrange(Date)
+El.stable<-rbind(h.El.stable,a.El.stable)%>%
+  arrange(Date)
+Am.oc<-rbind(h.Am.oc,a.Am.oc)%>%
+  arrange(Date)
+El.oc<-rbind(h.El.oc,a.El.oc)%>%
   arrange(Date)
 
-# plot apex and hobo facet graphs
-plots<-ggplot(data=datalog, aes(x=Date, y=mean, colour=Source))+
-  geom_line(aes(colour=Source))+
+# Color Categorization for Plotting
+# pink pallet "#FFCCFF","#FF00FF","#CC6666","#D55E00","#990066"
+# blue pallet "#66CC99","#339966","#0072B2","#000099","#3399FF"
+my.colors<-c("#FFCCFF","#CC6666",
+             #"#CC6666",
+             "#CC6666","#D55E00","#D55E00","#D55E00","#D55E00","#990066","#990066","#990066","#FFCCFF","#990066","#FFCCFF","#FFCCFF","#FF00FF",
+             #"#FF00FF",
+             "#FF00FF","#FF00FF","#CC6666", # apex colors
+             
+             "#66FFFF","#0072B2",
+             #"#0072B2",
+             "#0072B2","#000099","#000099","#000099","#000099","#3399FF","#3399FF","#3399FF","#66FFFF","#3399FF","#66FFFF","#66FFFF","#339966",
+             #"#339966",
+             "#339966","#339966","#0072B2") # hobo colors
+subset.colors<-c("#FFCCFF","#FF00FF","#D55E00","#CC6666","#990066",
+                 "#66CC99","#339966","#3399FF","#0072B2","#000099")
+ignore.colors<-c("#FFCCFF","#FF00FF","#D55E00","#990066",
+                 "#66CC99","#339966","#0072B2","#000099")
+
+#####################
+# Apex and hobo raw treatment plots
+#####################
+# All treatments
+plot1<-ggplot(data=datalog, aes(x=Date, y=Value, colour=Tank))+
+  geom_line()+
+  theme_bw()+
+  theme(legend.title.align = 0.5)+ #align center
+  scale_colour_manual(values=my.colors)+
   facet_wrap(ncol=1,~Treatment, scales="free_y")+
-  labs(x="Date",y="Mean TempC")+
-  ggsave(paste0("Output/",folder.date,"/Treatment_Facet.png"))
-plots
+  labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures per Treatment")+
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_rawValues_perTreatment_plot.png"),width=11,height=7)
+# By treatment
+plot2<-ggplot(data=Am.stable, aes(x=Date, y=Value, colour=Tank))+
+  geom_line()+
+  theme_bw()+
+  scale_colour_manual(values=subset.colors)+
+  labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Ambient Stable Treatment")+
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_Ambient_Stable_plot.png"),width=11,height=6)
+plot3<-ggplot(data=El.stable, aes(x=Date, y=Value, colour=Tank))+
+  geom_line()+
+  theme_bw()+
+  scale_colour_manual(values=ignore.colors)+
+  labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Elevated Stable Treatment")+
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_Elevated_Stable_plot.png"),width=11,height=6)
+plot4<-ggplot(data=Am.oc, aes(x=Date, y=Value, colour=Tank))+
+  geom_line()+
+  theme_bw()+
+  scale_colour_manual(values=ignore.colors)+
+  labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Ambient Oscillating Treatment")+
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_Ambient_Oscillating_plot.png"),width=11,height=6)
+plot5<-ggplot(data=El.oc, aes(x=Date, y=Value, colour=Tank))+
+  geom_line()+
+  theme_bw()+
+  scale_colour_manual(values=subset.colors)+
+  labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Elevated Oscillating Treatment")+
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_Elevated_Oscillating_plot.png"),width=11,height=6)
+
+#####################
+# Plotting Mean Treatment Plots
+#####################
+# Without Error Bars
+plot<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Source))+
+  geom_line()+
+  theme_bw()+
+  facet_wrap(ncol=1,~Treatment, scales="free_y")+
+  labs(colour="Probe Source",x="Date",y="Mean TempC",
+       title="Mean Apex and Hobo Temperatures per Treatment",subtitle="Without Standard Error")+
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perTreatment_noSE_plot.png"),width=11,height=7)
+# With Error Bars
+plot7<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
+  geom_line()+
+  theme_bw()+
+  geom_errorbar(aes(ymin=mean-SE,ymax=mean+SE),width=0.2,position="identity")+
+  facet_wrap(ncol=1,~Treatment, scales="free_y")+
+  labs(colour="Probe Source",x="Date",y="Mean TempC",
+       title="Mean Apex and Hobo Temperatures per Treatment",subtitle="With Standard Error")+
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perTreatment_SE_plot.png"),width=11,height=7)
+
 
