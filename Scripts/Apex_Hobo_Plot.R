@@ -188,15 +188,31 @@ plot5<-ggplot(data=El.oc, aes(x=Date, y=Value, colour=Tank))+
 # Plotting Mean Treatment Plots
 #####################
 # Without Error Bars
-plot<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Source))+
+plot6<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Source))+
   geom_line()+
   theme_bw()+
   facet_wrap(ncol=1,~Treatment, scales="free_y")+
   labs(colour="Probe Source",x="Date",y="Mean TempC",
        title="Mean Apex and Hobo Temperatures per Treatment",subtitle="Without Standard Error")+
   ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perTreatment_noSE_plot.png"),width=11,height=7)
-# With Error Bars
 plot7<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
+  geom_line()+
+  theme_bw()+
+  facet_wrap(ncol=1,~Source, scales="free_y")+
+  labs(colour="Treatment",x="Date",y="Mean TempC",
+       title="Mean Apex and Hobo Temperatures per Source",subtitle="Without Standard Error")+
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perSource_noSE_plot.png"),width=11,height=7)
+graphlog<-meanlog%>%
+  unite("Source_Treatment",Source:Treatment, sep="_",remove=TRUE)
+plot8<-ggplot(data=graphlog, aes(x=Date, y=mean, colour=Source_Treatment))+
+  geom_line()+
+  theme_bw()+
+  scale_colour_manual(values=ignore.colors)+
+  labs(colour="Probe Sources and Treatment",x="Date",y="Mean TempC",
+       title="Mean Apex and Hobo Temperatures per Source and Treatment",subtitle="Without Standard Error")#+
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perSourceTreatment_noSE_plot.png"),width=11,height=7)
+# With Error Bars
+plot9<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
   geom_line()+
   theme_bw()+
   geom_errorbar(aes(ymin=mean-SE,ymax=mean+SE),width=0.2,position="identity")+
@@ -204,5 +220,6 @@ plot7<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
   labs(colour="Probe Source",x="Date",y="Mean TempC",
        title="Mean Apex and Hobo Temperatures per Treatment",subtitle="With Standard Error")+
   ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perTreatment_SE_plot.png"),width=11,height=7)
+
 
 
