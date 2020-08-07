@@ -14,11 +14,3 @@ July 2020 Temperatures
 July 15-30, 2020 Temperatures
 ![July 15-30, 2020 Temperatures](https://github.com/SilbigerLab/Mesocosm_Environmental_Data/blob/master/Output/Cultured_Ab/CulteredAb_Hobo_2week_plot.png)
 
-July 2020 mean Temperatures
-![July 2020 mean Temperatures](https://github.com/SilbigerLab/Mesocosm_Environmental_Data/blob/master/Output/Cultured_Ab/CulteredAb_Hobo_avgmonth_facet_plot.png)
-
-July 15-30, 2020 mean Temperatures
-![July 15-30, 2020 mean Temperatures](https://github.com/SilbigerLab/Mesocosm_Environmental_Data/blob/master/Output/Cultured_Ab/CulteredAb_Hobo_avg2week_facet_plot.png)
-
-
-
