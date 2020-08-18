@@ -11,23 +11,24 @@ library(plotrix)
 
 ######################
 
-folder.date<-"20200803" # Output folder name
+folder.date<-"20200817" # Output folder name
 
 ######################
 # Load Hobo Data
 ######################
 
-hobolog<-read_csv(paste0("Data/HOBO_loggers/",folder.date,"/HOBOLog_20200803.csv"),na=(c("NA", "")))
+hobolog<-read_csv(paste0("Data/HOBO_loggers/",folder.date,"/HOBOLog_",folder.date,".csv"),na=(c("NA", "")))
 hobolog<-hobolog%>%
-  select(-c('Intensity, ( lux)','Hobo-Tmp-6','Hobo-Tmp-11'))
+  select(-c('Intensity, ( lux)'))
 
 # start date and time of data logging
-startLog<-parse_datetime("2020-07-30 01:00:00",format = "%F %T", na=character(),
+startLog<-parse_datetime("2020-08-14 00:00:00",format = "%F %T", na=character(),
                          locale = locale(tz = ""), trim_ws = TRUE)
 # end date and time of data logging
-endLog<-parse_datetime("2020-08-04 12:50:00",format = "%F %T", na=character(),
+endLog<-parse_datetime("2020-08-17 14:32:00",format = "%F %T", na=character(),
                        locale = locale(tz = ""), trim_ws = TRUE)
 
+###leave below the same###
 # parse date_time to POSIXct
 hobolog$Date<-hobolog$Date%>%
   as.POSIXct(format = "%F %T", na=character(), tz="", locale = locale(tz = ""), trim_ws = TRUE)
@@ -78,12 +79,7 @@ apexlog$Date<-apexlog$Date%>%
 apexlog<-apexlog%>%
   filter((Date>=startLog) & (Date<=endLog))%>%
   rename(Tank="Probe")
-  
 
-apexlog<-apexlog%>%
-  filter(Tank!="Tmp-6")
-apexlog<-apexlog%>%
-  filter(Tank!="Tmp-11")
 
 #####################
 # split Apex data by treatment type
@@ -130,21 +126,34 @@ El.oc<-rbind(h.El.oc,a.El.oc)%>%
 # Color Categorization for Plotting
 # pink pallet "#FFCCFF","#FF00FF","#CC6666","#D55E00","#990066"
 # blue pallet "#66CC99","#339966","#0072B2","#000099","#3399FF"
-my.colors<-c("#FFCCFF","#CC6666",
-             #"#CC6666",
-             "#CC6666","#D55E00","#D55E00","#D55E00","#D55E00","#990066","#990066","#990066","#FFCCFF","#990066","#FFCCFF","#FFCCFF","#FF00FF",
-             #"#FF00FF",
-             "#FF00FF","#FF00FF","#CC6666", # apex colors
+#tank1, #tank10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+#tank 2, 20
+#tank 3
+#...
+
+my.colors<-c("#A6E1F4","#BCEE68","#BCEE68","#BCEE68","#FF3030","#FF3030","#FF3030","#FF3030","#FFC125","#FFC125","#FFC125",
+             "#A6E1F4","#FFC125",
+             "#A6E1F4",
+             "#A6E1F4",
+             "#BC7A8F",
+             "#BC7A8F",
+             "#BC7A8F",
+             "#BC7A8F",
+             "#BCEE68", # apex colors
              
-             "#66FFFF","#0072B2",
-             #"#0072B2",
-             "#0072B2","#000099","#000099","#000099","#000099","#3399FF","#3399FF","#3399FF","#66FFFF","#3399FF","#66FFFF","#66FFFF","#339966",
-             #"#339966",
-             "#339966","#339966","#0072B2") # hobo colors
+             "#00A9E0","#006400","#006400","#006400","#8B1A1A","#8B1A1A","#8B1A1A","#8B1A1A","#8B6914","#8B6914","#8B6914",
+             "#00A9E0","#8B6914",
+             "#00A9E0",
+             "#00A9E0",
+             "#771434",
+             "#771434",
+             "#771434",
+             "#771434",
+             "#006400") # hobo colors
 subset.colors<-c("#FFCCFF","#FF00FF","#D55E00","#CC6666","#990066",
                  "#66CC99","#339966","#3399FF","#0072B2","#000099")
 ignore.colors<-c("#FFCCFF","#FF00FF","#D55E00","#990066",
-                 "#66CC99","#339966","#0072B2","#000099")
+                 "#66CC99","#339966","#0072B2","#000099","#0072B2","#000099")
 
 #####################
 # Apex and hobo raw treatment plots
