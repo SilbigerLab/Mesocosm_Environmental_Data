@@ -1,28 +1,39 @@
 rm(list=ls())
 library(tidyverse)
 
+# change the dated folders to match the location of your files
+foldername<-'Data/HOBO_loggers/20200817/' # the location of all our hobo files
+folder_date<-'20200817'
+
+# start date and time of data logging
+startLog<-parse_datetime("2020-08-14 00:00:00",format = "%Y-%m-%d %H:%M:%S", na=character(),
+                         locale = locale(tz = ""), trim_ws = TRUE)
+# end date and time of data logging
+endLog<-parse_datetime("2020-08-17 14:32:00",format = "%Y-%m-%d %H:%M:%S", na=character(),
+                       locale = locale(tz = ""), trim_ws = TRUE)
+
 # filenames for each tank
 # comment out any tanks for which you have no data
-Tank1 <- 'TNK-1-SN20569922 2020-08-04 12_51_33 -0700.csv'
-Tank2 <- 'TNK-2-SN20565250 2020-08-04 12_51_59 -0700.csv'
-Tank3 <- 'TNK-3-SN20565253 2020-08-04 12_52_27 -0700.csv'
-Tank4 <- 'TNK-4-SN20565252 2020-08-04 12_52_52 -0700.csv'
-Tank5 <- 'TNK-5-SN20555838 2020-08-04 12_56_16 -0700.csv'
-Tank6 <- 'TNK-6-20565254 2020-08-04 12_57_32 -0700.csv'
-Tank7 <- 'TNK-7-SN20565255 2020-08-04 12_59_02 -0700.csv'
-Tank8 <- 'TNK-8-SN20714139 2020-08-04 12_59_35 -0700.csv'
-Tank9 <- 'TNK-9-SN20565257 2020-08-04 13_02_51 -0700.csv'
-Tank10 <- 'TNK-10-SN20565258 2020-08-04 13_03_17 -0700.csv'
-Tank11 <- 'TNK-11-SN20565259 2020-08-04 13_03_55 -0700.csv'
-Tank12 <- 'TNK-12-SN20714140 2020-08-04 13_04_25 -0700.csv'
-Tank13 <- 'TNK-13-SN20565261 2020-08-04 13_07_03 -0700.csv'
-Tank14 <- 'TNK-14-SN20565262 2020-08-04 13_07_28 -0700.csv'
-Tank15 <- 'TNK-15-SN20565263 2020-08-04 13_07_56 -0700.csv'
-Tank16 <- 'TNK-16-SN20714141 2020-08-04 13_08_21 -0700.csv'
-Tank17 <- 'TNK-17-SN20565265 2020-08-04 13_10_36 -0700.csv'
-Tank18 <- 'TNK-18-SN20569983 2020-08-04 13_11_04 -0700.csv'
-Tank19 <- 'TNK-19-SN20714142 2020-08-04 13_11_45 -0700.csv'
-Tank20 <- 'TNK-20-SN20714143 2020-08-04 13_12_19 -0700.csv' 
+Tank1 <- 'TNK-1-SN20569922 2020-08-17 14_32_50 -0700.csv'
+Tank2 <- 'TNK-2-SN20565250 2020-08-17 14_33_25 -0700.csv'
+Tank3 <- 'TNK-3-SN20565253 2020-08-17 14_34_24 -0700.csv'
+Tank4 <- 'TNK-4-SN20565252 2020-08-17 14_35_07 -0700.csv'
+Tank5 <- 'TNK-5-SN20555838 2020-08-17 14_36_58 -0700.csv'
+Tank6 <- 'TNK-6-20565254 2020-08-17 14_37_35 -0700.csv'
+Tank7 <- 'TNK-7-SN20565255 2020-08-17 14_38_21 -0700.csv'
+Tank8 <- 'TNK-8-SN20714139 2020-08-17 14_39_22 -0700.csv'
+Tank9 <- 'TNK-9-SN20565257 2020-08-17 14_40_04 -0700.csv'
+Tank10 <- 'TNK-10-SN20565258 2020-08-17 14_40_38 -0700.csv'
+Tank11 <- 'TTNK-11-SN20565259 2020-08-17 14_41_17 -0700.csv'
+Tank12 <- 'TNK-12-SN20714140 2020-08-17 14_41_57 -0700.csv'
+Tank13 <- 'TNK-13-SN20565261 2020-08-17 14_43_06 -0700.csv'
+Tank14 <- 'TNK-14-SN20565262 2020-08-17 14_43_36 -0700.csv'
+Tank15 <- 'TNK-15-SN20565263 2020-08-17 14_44_32 -0700.csv'
+Tank16 <- 'TNK-16-SN20714141 2020-08-17 14_45_20 -0700.csv'
+Tank17 <- 'TNK-17-SN20565265 2020-08-17 14_46_16 -0700.csv'
+Tank18 <- 'TNK-18-SN20569983 2020-08-17 14_46_46 -0700.csv'
+Tank19 <- 'TNK-19-SN20714142 2020-08-17 14_47_23 -0700.csv'
+Tank20 <- 'TNK-20-SN20714143 2020-08-17 14_48_21 -0700.csv' 
 # If not reading in data for Tank 20, Run script up to Merge section, then follow instructions
 
 ########################################################
@@ -302,6 +313,10 @@ If(exists(Tnk1)){
 #Hobo_All <- separate(Hobo_All,"Date Time, GMT -0700", into=c("Date","Time"), sep = " ", remove = TRUE)
 
 View(Hobo_All)
+
+# filter out "test time" data
+Hobo_All<-Hobo_All%>%
+  filter((Date>=startLog) & (Date<=endLog))
 
 ############## save data file
 
