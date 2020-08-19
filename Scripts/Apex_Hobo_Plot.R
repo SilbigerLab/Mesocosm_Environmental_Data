@@ -124,13 +124,13 @@ El.oc<-rbind(h.El.oc,a.El.oc)%>%
   arrange(Date)
 
 # Color Categorization for Plotting
-# pink pallet "#FFCCFF","#FF00FF","#CC6666","#D55E00","#990066"
-# blue pallet "#66CC99","#339966","#0072B2","#000099","#3399FF"
-#tank1, #tank10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+#tank 1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
 #tank 2, 20
 #tank 3
-#...
+#...tank 9
 
+
+# PDF of Chart of R Colors: https://github.com/EarlGlynn/colorchart/wiki/Color-Chart-in-R
 my.colors<-c("#A6E1F4","#BCEE68","#BCEE68","#BCEE68","#FF3030","#FF3030","#FF3030","#FF3030","#FFC125","#FFC125","#FFC125",
              "#A6E1F4","#FFC125",
              "#A6E1F4",
@@ -139,21 +139,21 @@ my.colors<-c("#A6E1F4","#BCEE68","#BCEE68","#BCEE68","#FF3030","#FF3030","#FF303
              "#BC7A8F",
              "#BC7A8F",
              "#BC7A8F",
-             "#BCEE68", # apex colors
+             "#BCEE68", 
+             # apex colors: #A6E1F4 = light blue, #BCEE68 = light green, #FF3030 = red, #FFC125 = yellow, #BC7A8F = light purple 
              
              "#00A9E0","#006400","#006400","#006400","#8B1A1A","#8B1A1A","#8B1A1A","#8B1A1A","#8B6914","#8B6914","#8B6914",
              "#00A9E0","#8B6914",
              "#00A9E0",
              "#00A9E0",
-             "#771434",
-             "#771434",
-             "#771434",
-             "#771434",
-             "#006400") # hobo colors
-subset.colors<-c("#FFCCFF","#FF00FF","#D55E00","#CC6666","#990066",
-                 "#66CC99","#339966","#3399FF","#0072B2","#000099")
-ignore.colors<-c("#FFCCFF","#FF00FF","#D55E00","#990066",
-                 "#66CC99","#339966","#0072B2","#000099","#0072B2","#000099")
+             "#8A2BE2",
+             "#8A2BE2",
+             "#8A2BE2",
+             "#8A2BE2",
+             "#006400") 
+             # hobo colors: #00A9E0 = dark blue, #006400 = dark green, #8B1A1A = dark red, #8B6914 = dark gold, #8A2BE2 = dark purple
+subset.colors<-c("#A6E1F4","#BCEE68","#FF3030","#FFC125","#BC7A8F",
+                 "#00A9E0","#006400","#8B1A1A","#8B6914","#8A2BE2")
 
 #####################
 # Apex and hobo raw treatment plots
@@ -177,13 +177,13 @@ plot2<-ggplot(data=Am.stable, aes(x=Date, y=Value, colour=Tank))+
 plot3<-ggplot(data=El.stable, aes(x=Date, y=Value, colour=Tank))+
   geom_line()+
   theme_bw()+
-  scale_colour_manual(values=ignore.colors)+
+  scale_colour_manual(values=subset.colors)+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Elevated Stable Treatment")+
   ggsave(paste0("Output/",folder.date,"/ApexHobo_Elevated_Stable_plot.png"),width=11,height=6)
 plot4<-ggplot(data=Am.oc, aes(x=Date, y=Value, colour=Tank))+
   geom_line()+
   theme_bw()+
-  scale_colour_manual(values=ignore.colors)+
+  scale_colour_manual(values=subset.colors)+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Ambient Oscillating Treatment")+
   ggsave(paste0("Output/",folder.date,"/ApexHobo_Ambient_Oscillating_plot.png"),width=11,height=6)
 plot5<-ggplot(data=El.oc, aes(x=Date, y=Value, colour=Tank))+
