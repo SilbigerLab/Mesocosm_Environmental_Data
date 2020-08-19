@@ -216,7 +216,7 @@ graphlog<-meanlog%>%
 plot8<-ggplot(data=graphlog, aes(x=Date, y=mean, colour=Source_Treatment))+
   geom_line()+
   theme_bw()+
-  scale_colour_manual(values=ignore.colors)+
+  scale_colour_manual(values=subset.colors)+
   labs(colour="Probe Sources and Treatment",x="Date",y="Mean TempC",
        title="Mean Apex and Hobo Temperatures per Source and Treatment",subtitle="Without Standard Error")#+
   ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perSourceTreatment_noSE_plot.png"),width=11,height=7)
