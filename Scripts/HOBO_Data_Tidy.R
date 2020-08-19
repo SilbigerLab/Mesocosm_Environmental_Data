@@ -1,3 +1,11 @@
+# Reorganizing the Raw Hobo Tidbit and Hobo Pendant data files to compare to Apex data files and plot.
+# Use this script only if you have a full set of 20 hobo files (1 hobo per tank), otherwise, use the "tank-specific_HOBO_Data_Tidy.R" script
+
+# written by Danielle Barnas
+# created 8/19/2020
+# last updated 8/19/2020
+
+
 rm(list=ls())
 library(tidyverse)
 
