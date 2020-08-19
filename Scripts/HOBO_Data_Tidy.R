@@ -5,12 +5,18 @@ library(tidyverse)
 foldername<-'Data/HOBO_loggers/20200817/' # the location of all our hobo files
 folder_date<-'20200817'
 
+# ONLY CHANGE THE DATE AND TIME, MAINTAINING FORMAT
+# start date and time of data logging
+startLog<-parse_datetime("2020-08-14 00:00:00",format = "%F %T", na=character(),locale = locale(tz = ""), trim_ws = TRUE)
+# end date and time of data logging
+endLog<-parse_datetime("2020-08-17 14:00:00",format = "%F %T", na=character(),locale = locale(tz = ""), trim_ws = TRUE)
+
 ########################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ---------------
 ########################################################
 
 # import all csv files in the 'foldername' directory
-file.names<-basename(list.files(path = foldername, pattern = "csv$", recursive = F)) #list all csv file names in the folder and subfolders
+file.names<-basename(list.files(path = foldername, pattern = c("TNK","csv$"), recursive = F)) #list all csv file names in the folder and subfolders
 # read in all the files, appending the path before the filename
 data <- file.names %>%
   map(~ read_csv(file.path(foldername, .),skip=2,
@@ -23,97 +29,97 @@ Tnk1 <- drop_na(Tnk1)
 Tnk1 <- Tnk1 %>%
   rename('Hobo-Tmp-1'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 2
-Tnk2 <- data[[2]]
+Tnk2 <- data[[12]]
 Tnk2 <- drop_na(Tnk2)
 Tnk2 <- Tnk2 %>%
   rename('Hobo-Tmp-2'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 3
-Tnk3 <- data[[3]]
+Tnk3 <- data[[14]]
 Tnk3 <- drop_na(Tnk3)
 Tnk3 <- Tnk3 %>%
   rename('Hobo-Tmp-3'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 4
-Tnk4 <- data[[4]]
+Tnk4 <- data[[15]]
 Tnk4 <- drop_na(Tnk4)
 Tnk4 <- Tnk4 %>%
   rename('Hobo-Tmp-4'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 5
-Tnk5 <- data[[5]]
+Tnk5 <- data[[16]]
 Tnk5 <- drop_na(Tnk5)
 Tnk5 <- Tnk5 %>%
   rename('Hobo-Tmp-5'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 6
-Tnk6 <- data[[6]]
+Tnk6 <- data[[17]]
 Tnk6 <- drop_na(Tnk6)
 Tnk6 <- Tnk6 %>%
   rename('Hobo-Tmp-6'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 7
-Tnk7 <- data[[7]]
+Tnk7 <- data[[18]]
 Tnk7 <- drop_na(Tnk7)
 Tnk7 <- Tnk7 %>%
   rename('Hobo-Tmp-7'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 8
-Tnk8 <- data[[8]]
+Tnk8 <- data[[19]]
 Tnk8 <- drop_na(Tnk8)
 Tnk8 <- Tnk8 %>%
   rename('Hobo-Tmp-8'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 9
-Tnk9 <- data[[9]]
+Tnk9 <- data[[20]]
 Tnk9 <- drop_na(Tnk9)
 Tnk9 <- Tnk9 %>%
   rename('Hobo-Tmp-9'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 10
-Tnk10 <- data[[10]]
+Tnk10 <- data[[2]]
 Tnk10 <- drop_na(Tnk10)
 Tnk10 <- Tnk10 %>%
   rename('Hobo-Tmp-10'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 11
-Tnk11 <- data[[11]]
+Tnk11 <- data[[3]]
 Tnk11 <- drop_na(Tnk11)
 Tnk11 <- Tnk11 %>%
   rename('Hobo-Tmp-11'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 12
-Tnk12 <- data[[12]]
+Tnk12 <- data[[4]]
 Tnk12 <- drop_na(Tnk12)
 Tnk12 <- Tnk12 %>%
   rename('Hobo-Tmp-12'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 13
-Tnk13 <- data[[13]]
+Tnk13 <- data[[5]]
 Tnk13 <- drop_na(Tnk13)
 Tnk13 <- Tnk13 %>%
   rename('Hobo-Tmp-13'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 14
-Tnk14 <- data[[14]]
+Tnk14 <- data[[6]]
 Tnk14 <- drop_na(Tnk14)
 Tnk14 <- Tnk14 %>%
   rename('Hobo-Tmp-14'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 15
-Tnk15 <- data[[15]]
+Tnk15 <- data[[7]]
 Tnk15 <- drop_na(Tnk15)
 Tnk15 <- Tnk15 %>%
   rename('Hobo-Tmp-15'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 16
-Tnk16 <- data[[16]]
+Tnk16 <- data[[8]]
 Tnk16 <- drop_na(Tnk16)
 Tnk16 <- Tnk16 %>%
   rename('Hobo-Tmp-16'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 17
-Tnk17 <- data[[17]]
+Tnk17 <- data[[9]]
 Tnk17 <- drop_na(Tnk17)
 Tnk17 <- Tnk17 %>%
   rename('Hobo-Tmp-17'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 18
-Tnk18 <- data[[18]]
+Tnk18 <- data[[10]]
 Tnk18 <- drop_na(Tnk18)
 Tnk18 <- Tnk18 %>%
   rename('Hobo-Tmp-18'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 19
-Tnk19 <- data[[19]]
+Tnk19 <- data[[11]]
 Tnk19 <- drop_na(Tnk19)
 Tnk19 <- Tnk19 %>%
   rename('Hobo-Tmp-19'=`Temp, (*C)`,Date="Date Time, GMT -0700")
 # Tank 20
-Tnk20 <- data[[20]]
+Tnk20 <- data[[13]]
 Tnk20 <- drop_na(Tnk20)
 Tnk20 <- Tnk20 %>%
   rename('Hobo-Tmp-20'=`Temp, (*C)`,Date="Date Time, GMT -0700")
@@ -189,7 +195,11 @@ If(exists(Tnk1)){
 # Split Date and Time into separate columns
 #Hobo_All <- separate(Hobo_All,"Date Time, GMT -0700", into=c("Date","Time"), sep = " ", remove = TRUE)
 
+# filter out "test time" data
+Hobo_All<-Hobo_All%>%
+  filter((Date>=startLog) & (Date<=endLog))
 View(Hobo_All)
+
 
 ############## save data file
 
