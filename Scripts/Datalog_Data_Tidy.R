@@ -1,4 +1,9 @@
-# The following script will produce two dataframes:one containing all logged Apex data, and one only containing temperature and pH data from each mesocosm tank
+# Reorganizing the Raw Apex data files for readability and plotting
+# The following script will produce/update two dataframes: one containing all logged Apex data, and one only containing temperature and pH data from each mesocosm tank
+
+# written by Danielle Barnas
+# created 1/03/2019
+# last updated 7/30/2020
 
 rm(list=ls())
 library(tidyverse)

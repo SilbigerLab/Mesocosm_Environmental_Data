@@ -1,3 +1,9 @@
+# Organizing the Raw Apex program files for readability
+
+# written by Danielle Barnas
+# created 1/03/2019
+# last updated 1/03/2019
+
 rm(list=ls())
 library(tidyverse)
 

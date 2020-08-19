@@ -1,4 +1,8 @@
-# Plot Apex against Hobo Data
+# Plot Apex data against Hobo Data
+
+# written by Danielle Barnas
+# created 7/25/2020
+# last updated 8/17/20
 
 # clean environment
 rm(list=ls())

@@ -1,10 +1,18 @@
+# Reorganizing the Raw Hobo Tidbit and Hobo Pendant data files to compare to Apex data files and plot.
+# Use this script if you do not have a full set of 20 hobo files (1 hobo per tank), otherwise, use the "HOBO_Data_Tidy.R" script if you have all 20 files available.
+
+# written by Danielle Barnas
+# created 1/03/2019
+# last updated 8/18/2020
+
 rm(list=ls())
 library(tidyverse)
 
 # change the dated folders to match the location of your files
-foldername<-'Data/HOBO_loggers/20200817/' # the location of all our hobo files
+foldername<-'Data/HOBO_loggers/20200817/' # the location of all your hobo files
 folder_date<-'20200817'
 
+# ONLY CHANGE THE DATE AND TIME, MAINTAINING FORMAT
 # start date and time of data logging
 startLog<-parse_datetime("2020-08-14 00:00:00",format = "%Y-%m-%d %H:%M:%S", na=character(),
                          locale = locale(tz = ""), trim_ws = TRUE)

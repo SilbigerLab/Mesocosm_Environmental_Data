@@ -2,8 +2,8 @@ rm(list=ls())
 library(tidyverse)
 
 # change the dated folder only
-foldername<-'Data/HOBO_loggers/20200807/'
-folder_date<-'Data/HOBO_loggers/20200807/'
+foldername<-'Data/HOBO_loggers/20200817/'
+folder_date<-'Data/HOBO_loggers/20200817/'
 
 # filenames for each tank
 # comment out any tanks for which you have no data
