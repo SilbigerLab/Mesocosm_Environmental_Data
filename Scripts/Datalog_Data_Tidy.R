@@ -1,5 +1,5 @@
 # Reorganizing the Raw Apex data files for readability and plotting
-# The following script will produce/update two dataframes: one containing all logged Apex data, and one only containing temperature and pH data from each mesocosm tank
+# The following script will produce/update one (or an optional second) dataframe(s): one only containing temperature and pH data from each mesocosm tank, and one optional containing all logged Apex data
 
 # written by Danielle Barnas
 # created 1/03/2019
@@ -327,7 +327,7 @@ Apex_All <- Apex_All %>% arrange(Date) # or
 #Apex_Full <- Apex_Full %>% arrange(Probe)
 #View(Apex_All)
 
-write_csv(Apex_All,paste0('Data/Apex_DataLogs/Apex_Full_Datalog.csv'))
+#write_csv(Apex_All,paste0('Data/Apex_DataLogs/Apex_Full_Datalog.csv'))
 
 Apex_pH <- Apex_All %>%
   filter(Type %in% c("Temp", "pH"))
