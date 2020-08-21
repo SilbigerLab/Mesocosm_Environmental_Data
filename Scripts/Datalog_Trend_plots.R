@@ -1,8 +1,4 @@
-# Organizing Raw Apex data for readability and plotting over time
-
-# written by Danielle Barnas
-# created 1/03/2019
-# last updated 1/03/2019
+# Organizing data for plotting over time
 
 # clean environment
 rm(list=ls())

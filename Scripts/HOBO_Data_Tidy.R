@@ -5,11 +5,12 @@
 # created 8/19/2020
 # last updated 8/19/2020
 
+
 rm(list=ls())
 library(tidyverse)
 
 # change the dated folders to match the location of your files
-foldername<-'Data/HOBO_loggers/20200817/' # the location of all your hobo files
+foldername<-'Data/HOBO_loggers/20200817/' # the location of all our hobo files
 folder_date<-'20200817'
 
 # ONLY CHANGE THE DATE AND TIME, MAINTAINING FORMAT
