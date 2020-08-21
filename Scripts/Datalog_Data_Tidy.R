@@ -11,14 +11,14 @@ library(tidyverse)
 ########################
 # File Names
 ########################
-foldername<-'20200803' # folder of the day
-date<-'20200803' # today's date
+foldername<-'20200821' # folder of the day
+date<-'20200821' # today's date
 Apex_All_Datalogs<-'Apex_Full_Datalog.csv' # Long-term historical data set
-Apex_1_filename<-'datalog_1_200803d1.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
-Apex_2_filename<-'datalog_2_200803d1.csv' # data from Apex 40216
-Apex_3_filename<-'datalog_3_200803d1.csv' # data from Apex 39952
-Apex_4_filename<-'datalog_4_200803d1.csv' # data from Apex 37810
-Apex_5_filename<-'datalog_5_200803d1.csv' # data from Apex 41239
+Apex_1_filename<-'datalog_apex1_200817d4.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
+Apex_2_filename<-'datalog_apex2_200817d4.csv' # data from Apex 40216
+Apex_3_filename<-'datalog_apex3_200817d4.csv' # data from Apex 39952
+Apex_4_filename<-'datalog_apex4_200817d4.csv' # data from Apex 37810
+Apex_5_filename<-'datalog_apex5_200817d4.csv' # data from Apex 41239
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
@@ -320,7 +320,8 @@ Apex_All <- read_csv(paste0('Data/Apex_DataLogs/',Apex_All_Datalogs),
 
 # Add the current Apex dataframe to the larger dataframe containing all apex logs
 Apex_All <- 
-  union(Apex_All,Apex_Full,by=Date)
+  union(Apex_All,Apex_Full,by=Date) %>%
+  distinct()
 
 Apex_All <- Apex_All %>% arrange(Date) # or
 #Apex_Full <- Apex_Full %>% arrange(Probe)
