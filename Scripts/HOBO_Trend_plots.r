@@ -1,5 +1,9 @@
 # Organizing HOBO data for plotting over time
 
+# written by Danielle Barnas
+# created 1/03/2020
+# last updated 1/03/2020
+
 # clean environment
 rm(list=ls())
 
@@ -16,7 +20,7 @@ folder.date<- "20200803"
 datalog<-read_csv(paste0("Data/HOBO_loggers/",folder.date,"/HOBOLog_20200803.csv"),na=(c("NA", "")))
 
 datalog<-datalog%>%
-  select(-c('Intensity, ( lux)',Tmp-6,Tmp-11))
+  select(-c('Intensity, ( lux)'))
 
 # start date and time of data logging
 startLog<-parse_datetime("2020-07-30 01:00:00",format = "%Y-%m-%d %H:%M:%S", na=character(),
