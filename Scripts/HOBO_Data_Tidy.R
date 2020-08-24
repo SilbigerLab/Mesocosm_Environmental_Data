@@ -11,6 +11,7 @@ library(tidyverse)
 # change the dated folders to match the location of your files
 foldername<-'Data/HOBO_loggers/20200823/' # the location of all your hobo files
 folder_date<-'20200823'
+Hobo_All_Logs<-'Amanda_Hobo_Logs.csv'
 
 # ONLY CHANGE THE DATE AND TIME, MAINTAINING FORMAT
 # start date and time of data logging
@@ -208,7 +209,25 @@ Hobo_All<-Hobo_All%>%
 View(Hobo_All)
 
 
-############## save data file
+##################
+# Save Data File
+##################
 
 write_csv(Hobo_All,paste0(foldername,"HOBOLog_",folder_date,".csv"))
 
+##################
+# Read and overwrite compilation dataset of hobo timeseries
+##################
+
+# Read in Hobo_TS
+Hobo_TS <- read_csv(paste0('Data/HOBO_loggers/',Hobo_All_Logs),
+                     col_names = TRUE)
+
+# Add the current Hobo dataframe to the larger dataframe containing all Hobo logs
+Hobo_TS <- 
+  union(Hobo_TS,Hobo_All,by=Date) %>%
+  distinct()
+
+Hobo_TS <- Hobo_TS %>% arrange(Date)
+
+write_csv(Hobo_TS,paste0('Data/HOBO_loggers/',Hobo_All_Logs))
