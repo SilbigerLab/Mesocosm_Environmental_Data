@@ -15,7 +15,7 @@ library(plotrix)
 
 ######################
 
-folder.date<-"20200817" # Output folder name
+folder.date<-"20200823" # Output folder name
 
 ######################
 # Load Hobo Data
@@ -26,10 +26,10 @@ hobolog<-hobolog%>%
   select(-c('Intensity, ( lux)'))
 
 # start date and time of data logging
-startLog<-parse_datetime("2020-08-14 00:00:00",format = "%F %T", na=character(),
+startLog<-parse_datetime("2020-08-17 00:00:00",format = "%F %T", na=character(),
                          locale = locale(tz = ""), trim_ws = TRUE)
 # end date and time of data logging
-endLog<-parse_datetime("2020-08-17 14:32:00",format = "%F %T", na=character(),
+endLog<-parse_datetime("2020-08-23 10:47:00",format = "%F %T", na=character(),
                        locale = locale(tz = ""), trim_ws = TRUE)
 
 ###leave below the same###

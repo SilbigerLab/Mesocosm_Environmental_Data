@@ -11,14 +11,14 @@ library(tidyverse)
 ########################
 # File Names
 ########################
-foldername<-'20200821' # folder of the day
-date<-'20200821' # today's date
-Apex_All_Datalogs<-'Apex_Full_Datalog.csv' # Long-term historical data set
-Apex_1_filename<-'datalog_apex1_200817d4.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
-Apex_2_filename<-'datalog_apex2_200817d4.csv' # data from Apex 40216
-Apex_3_filename<-'datalog_apex3_200817d4.csv' # data from Apex 39952
-Apex_4_filename<-'datalog_apex4_200817d4.csv' # data from Apex 37810
-Apex_5_filename<-'datalog_apex5_200817d4.csv' # data from Apex 41239
+foldername<-'20200823' # folder of the day
+date<-'20200823' # today's date
+Apex_All_Datalogs<-'Apex_temp_pH_Datalog.csv' # Long-term historical data set
+Apex_1_filename<-'datalog_apex1_200817d6.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
+Apex_2_filename<-'datalog_apex2_200817d6.csv' # data from Apex 40216
+Apex_3_filename<-'datalog_apex3_200817d6.csv' # data from Apex 39952
+Apex_4_filename<-'datalog_apex4_200817d6.csv' # data from Apex 37810
+Apex_5_filename<-'datalog_apex5_200817d6.csv' # data from Apex 41239
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
