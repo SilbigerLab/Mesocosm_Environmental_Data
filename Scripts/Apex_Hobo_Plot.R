@@ -2,7 +2,7 @@
 
 # written by Danielle Barnas
 # created 7/25/2020
-# last updated 8/17/20
+# last updated 8/24/20
 
 # clean environment
 rm(list=ls())
@@ -21,7 +21,7 @@ folder.date<-"20200823" # Output folder name
 # Load Hobo Data
 ######################
 
-hobolog<-read_csv(paste0("Data/HOBO_loggers/",folder.date,"/HOBOLog_",folder.date,".csv"),na=(c("NA", "")))
+hobolog<-read_csv(paste0("Data/HOBO_loggers/Amanda_Hobo_Logs.csv"),na=(c("NA", "")))
 hobolog<-hobolog%>%
   select(-c('Intensity, ( lux)'))
 
@@ -44,21 +44,42 @@ hobolog<-hobolog%>%
   pivot_longer(cols = -c(Date), names_to = "Tank",values_to = "Value",values_drop_na = TRUE)%>%
   mutate(Type="Temp")
 
+
 #####################
-# split Hobo data by treatment type
+# split Hobo data by treatment type and return Value column of 10-minute averages
 #####################
 h.Am.stable<-hobolog%>% # ambient stable temperature
   filter((Tank=="Hobo-Tmp-1"|Tank=="Hobo-Tmp-5"|Tank=="Hobo-Tmp-9"|Tank=="Hobo-Tmp-13"|Tank=="Hobo-Tmp-17"))%>%
-  mutate(Treatment="Ambient.Stable")
+  mutate(Treatment="Ambient.Stable")%>%
+  group_by(Date=cut(Date,"10 min"),Tank,Treatment,Type) %>%
+  summarise(Value=mean(Value))%>%
+  ungroup()
+h.Am.stable$Date<-h.Am.stable$Date%>%
+  as.POSIXct(format = "%F %T", na=character(), tz="GMT", trim_ws = TRUE)
 h.El.stable<-hobolog%>% # elevated stable temperature
   filter((Tank=="Hobo-Tmp-2"|Tank=="Hobo-Tmp-6"|Tank=="Hobo-Tmp-10"|Tank=="Hobo-Tmp-14"|Tank=="Hobo-Tmp-18"))%>%
-  mutate(Treatment="Elevated.Stable")
+  mutate(Treatment="Elevated.Stable")%>%
+  group_by(Date=cut(Date,"10 min"),Tank,Treatment,Type) %>%
+  summarise(Value=mean(Value))%>%
+  ungroup()
+h.El.stable$Date<-h.El.stable$Date%>%
+  as.POSIXct(format = "%F %T", na=character(), tz="GMT", trim_ws = TRUE)
 h.Am.oc<-hobolog%>% # ambient temperature oscillations
   filter((Tank=="Hobo-Tmp-3"|Tank=="Hobo-Tmp-7"|Tank=="Hobo-Tmp-11"|Tank=="Hobo-Tmp-15"|Tank=="Hobo-Tmp-19"))%>%
-  mutate(Treatment="Ambient.Oscillating")
+  mutate(Treatment="Ambient.Oscillating")%>%
+  group_by(Date=cut(Date,"10 min"),Tank,Treatment,Type) %>%
+  summarise(Value=mean(Value))%>%
+  ungroup()
+h.Am.oc$Date<-h.Am.oc$Date%>%
+  as.POSIXct(format = "%F %T", na=character(), tz="GMT", trim_ws = TRUE)
 h.El.oc<-hobolog%>% # elevated temperature oscillations
   filter((Tank=="Hobo-Tmp-4"|Tank=="Hobo-Tmp-8"|Tank=="Hobo-Tmp-12"|Tank=="Hobo-Tmp-16"|Tank=="Hobo-Tmp-20"))%>%
-  mutate(Treatment="Elevated.Oscillating")
+  mutate(Treatment="Elevated.Oscillating")%>%
+  group_by(Date=cut(Date,"10 min"),Tank,Treatment,Type) %>%
+  summarise(Value=mean(Value))%>%
+  ungroup()
+h.El.oc$Date<-h.El.oc$Date%>%
+  as.POSIXct(format = "%F %T", na=character(), tz="GMT", trim_ws = TRUE)
 # bind all rows to combine treatment data and summarise data by Date and Treatment
 hobolog<-h.Am.stable%>%
   rbind(h.El.stable,h.Am.oc,h.El.oc)%>%
@@ -170,32 +191,32 @@ plot1<-ggplot(data=datalog, aes(x=Date, y=Value, colour=Tank))+
   scale_colour_manual(values=my.colors)+
   facet_wrap(ncol=1,~Treatment, scales="free_y")+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures per Treatment")+
-  ggsave(paste0("Output/",folder.date,"/ApexHobo_rawValues_perTreatment_plot.png"),width=11,height=7)
+  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_rawValues_perTreatment_plot.png"),width=11,height=7)
 # By treatment
 plot2<-ggplot(data=Am.stable, aes(x=Date, y=Value, colour=Tank))+
   geom_line()+
   theme_bw()+
   scale_colour_manual(values=subset.colors)+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Ambient Stable Treatment")+
-  ggsave(paste0("Output/",folder.date,"/ApexHobo_Ambient_Stable_plot.png"),width=11,height=6)
+  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_Ambient_Stable_plot.png"),width=11,height=6)
 plot3<-ggplot(data=El.stable, aes(x=Date, y=Value, colour=Tank))+
   geom_line()+
   theme_bw()+
   scale_colour_manual(values=subset.colors)+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Elevated Stable Treatment")+
-  ggsave(paste0("Output/",folder.date,"/ApexHobo_Elevated_Stable_plot.png"),width=11,height=6)
+  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_Elevated_Stable_plot.png"),width=11,height=6)
 plot4<-ggplot(data=Am.oc, aes(x=Date, y=Value, colour=Tank))+
   geom_line()+
   theme_bw()+
   scale_colour_manual(values=subset.colors)+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Ambient Oscillating Treatment")+
-  ggsave(paste0("Output/",folder.date,"/ApexHobo_Ambient_Oscillating_plot.png"),width=11,height=6)
+  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_Ambient_Oscillating_plot.png"),width=11,height=6)
 plot5<-ggplot(data=El.oc, aes(x=Date, y=Value, colour=Tank))+
   geom_line()+
   theme_bw()+
   scale_colour_manual(values=subset.colors)+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Elevated Oscillating Treatment")+
-  ggsave(paste0("Output/",folder.date,"/ApexHobo_Elevated_Oscillating_plot.png"),width=11,height=6)
+  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_Elevated_Oscillating_plot.png"),width=11,height=6)
 
 #####################
 # Plotting Mean Treatment Plots
@@ -207,14 +228,14 @@ plot6<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Source))+
   facet_wrap(ncol=1,~Treatment, scales="free_y")+
   labs(colour="Probe Source",x="Date",y="Mean TempC",
        title="Mean Apex and Hobo Temperatures per Treatment",subtitle="Without Standard Error")+
-  ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perTreatment_noSE_plot.png"),width=11,height=7)
+  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_meanValues_perTreatment_noSE_plot.png"),width=11,height=7)
 plot7<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
   geom_line()+
   theme_bw()+
   facet_wrap(ncol=1,~Source, scales="free_y")+
   labs(colour="Treatment",x="Date",y="Mean TempC",
        title="Mean Apex and Hobo Temperatures per Source",subtitle="Without Standard Error")+
-  ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perSource_noSE_plot.png"),width=11,height=7)
+  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_meanValues_perSource_noSE_plot.png"),width=11,height=7)
 graphlog<-meanlog%>%
   unite("Source_Treatment",Source:Treatment, sep="_",remove=TRUE)
 plot8<-ggplot(data=graphlog, aes(x=Date, y=mean, colour=Source_Treatment))+
@@ -222,8 +243,8 @@ plot8<-ggplot(data=graphlog, aes(x=Date, y=mean, colour=Source_Treatment))+
   theme_bw()+
   scale_colour_manual(values=subset.colors)+
   labs(colour="Probe Sources and Treatment",x="Date",y="Mean TempC",
-       title="Mean Apex and Hobo Temperatures per Source and Treatment",subtitle="Without Standard Error")#+
-  ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perSourceTreatment_noSE_plot.png"),width=11,height=7)
+       title="Mean Apex and Hobo Temperatures per Source and Treatment",subtitle="Without Standard Error")+
+  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_meanValues_perSourceTreatment_noSE_plot.png"),width=11,height=7)
 # With Error Bars
 plot9<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
   geom_line()+
@@ -232,7 +253,5 @@ plot9<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
   facet_wrap(ncol=1,~Treatment, scales="free_y")+
   labs(colour="Probe Source",x="Date",y="Mean TempC",
        title="Mean Apex and Hobo Temperatures per Treatment",subtitle="With Standard Error")+
-  ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perTreatment_SE_plot.png"),width=11,height=7)
-
-
+  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_meanValues_perTreatment_SE_plot.png"),width=11,height=7)
 
