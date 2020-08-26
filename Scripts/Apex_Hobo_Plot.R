@@ -15,7 +15,7 @@ library(plotrix)
 
 ######################
 
-folder.date<-"20200823" # Output folder name
+folder.date<-"20200825" # Output folder name
 
 ######################
 # Load Hobo Data
@@ -26,10 +26,10 @@ hobolog<-hobolog%>%
   select(-c('Intensity, ( lux)'))
 
 # start date and time of data logging
-startLog<-parse_datetime("2020-08-17 00:00:00",format = "%F %T", na=character(),
+startLog<-parse_datetime("2020-08-23 00:00:00",format = "%F %T", na=character(),
                          locale = locale(tz = ""), trim_ws = TRUE)
 # end date and time of data logging
-endLog<-parse_datetime("2020-08-23 10:47:00",format = "%F %T", na=character(),
+endLog<-parse_datetime("2020-08-25 17:51:00",format = "%F %T", na=character(),
                        locale = locale(tz = ""), trim_ws = TRUE)
 
 ###leave below the same###
@@ -191,32 +191,32 @@ plot1<-ggplot(data=datalog, aes(x=Date, y=Value, colour=Tank))+
   scale_colour_manual(values=my.colors)+
   facet_wrap(ncol=1,~Treatment, scales="free_y")+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures per Treatment")+
-  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_rawValues_perTreatment_plot.png"),width=11,height=7)
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_rawValues_perTreatment_plot.png"),width=11,height=7)
 # By treatment
 plot2<-ggplot(data=Am.stable, aes(x=Date, y=Value, colour=Tank))+
   geom_line()+
   theme_bw()+
   scale_colour_manual(values=subset.colors)+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Ambient Stable Treatment")+
-  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_Ambient_Stable_plot.png"),width=11,height=6)
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_Ambient_Stable_plot.png"),width=11,height=6)
 plot3<-ggplot(data=El.stable, aes(x=Date, y=Value, colour=Tank))+
   geom_line()+
   theme_bw()+
   scale_colour_manual(values=subset.colors)+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Elevated Stable Treatment")+
-  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_Elevated_Stable_plot.png"),width=11,height=6)
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_Elevated_Stable_plot.png"),width=11,height=6)
 plot4<-ggplot(data=Am.oc, aes(x=Date, y=Value, colour=Tank))+
   geom_line()+
   theme_bw()+
   scale_colour_manual(values=subset.colors)+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Ambient Oscillating Treatment")+
-  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_Ambient_Oscillating_plot.png"),width=11,height=6)
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_Ambient_Oscillating_plot.png"),width=11,height=6)
 plot5<-ggplot(data=El.oc, aes(x=Date, y=Value, colour=Tank))+
   geom_line()+
   theme_bw()+
   scale_colour_manual(values=subset.colors)+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures",subtitle="Elevated Oscillating Treatment")+
-  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_Elevated_Oscillating_plot.png"),width=11,height=6)
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_Elevated_Oscillating_plot.png"),width=11,height=6)
 
 #####################
 # Plotting Mean Treatment Plots
@@ -228,14 +228,14 @@ plot6<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Source))+
   facet_wrap(ncol=1,~Treatment, scales="free_y")+
   labs(colour="Probe Source",x="Date",y="Mean TempC",
        title="Mean Apex and Hobo Temperatures per Treatment",subtitle="Without Standard Error")+
-  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_meanValues_perTreatment_noSE_plot.png"),width=11,height=7)
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perTreatment_noSE_plot.png"),width=11,height=7)
 plot7<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
   geom_line()+
   theme_bw()+
   facet_wrap(ncol=1,~Source, scales="free_y")+
   labs(colour="Treatment",x="Date",y="Mean TempC",
        title="Mean Apex and Hobo Temperatures per Source",subtitle="Without Standard Error")+
-  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_meanValues_perSource_noSE_plot.png"),width=11,height=7)
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perSource_noSE_plot.png"),width=11,height=7)
 graphlog<-meanlog%>%
   unite("Source_Treatment",Source:Treatment, sep="_",remove=TRUE)
 plot8<-ggplot(data=graphlog, aes(x=Date, y=mean, colour=Source_Treatment))+
@@ -244,7 +244,7 @@ plot8<-ggplot(data=graphlog, aes(x=Date, y=mean, colour=Source_Treatment))+
   scale_colour_manual(values=subset.colors)+
   labs(colour="Probe Sources and Treatment",x="Date",y="Mean TempC",
        title="Mean Apex and Hobo Temperatures per Source and Treatment",subtitle="Without Standard Error")+
-  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_meanValues_perSourceTreatment_noSE_plot.png"),width=11,height=7)
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perSourceTreatment_noSE_plot.png"),width=11,height=7)
 # With Error Bars
 plot9<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
   geom_line()+
@@ -253,5 +253,5 @@ plot9<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
   facet_wrap(ncol=1,~Treatment, scales="free_y")+
   labs(colour="Probe Source",x="Date",y="Mean TempC",
        title="Mean Apex and Hobo Temperatures per Treatment",subtitle="With Standard Error")+
-  ggsave(paste0("Output/",folder.date,"/Mean10min/ApexHobo_meanValues_perTreatment_SE_plot.png"),width=11,height=7)
+  ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perTreatment_SE_plot.png"),width=11,height=7)
 
