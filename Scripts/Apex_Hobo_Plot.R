@@ -9,7 +9,6 @@ rm(list=ls())
 
 # Load libraries
 library(tidyverse)
-library(ggplot2)
 library(lubridate)
 library(plotrix)
 
@@ -22,8 +21,8 @@ folder.date<-"20200826" # Output folder name (create this new folder before cont
 ######################
 
 hobolog<-read_csv(paste0("Data/HOBO_loggers/Amanda_Hobo_Logs.csv"),na=(c("NA", "")))
-hobolog<-hobolog%>%
-  select(-c('Intensity, ( lux)'))
+#hobolog<-hobolog%>%
+ #select(-c('Intensity, ( lux)'))
 
 # start date and time of data logging
 startLog<-parse_datetime("2020-08-22 00:00:00",format = "%F %T", na=character(),
