@@ -191,7 +191,7 @@ plot1<-ggplot(data=datalog, aes(x=Date, y=Value, colour=Tank))+
   theme_bw()+
   theme(legend.title.align = 0.5)+ #align center
   scale_colour_manual(values=my.colors)+
-  facet_wrap(ncol=1,~Treatment, scales="free_y")+
+  facet_wrap(ncol=1,~Treatment)+
   labs(colour="Tank Probes",x="Date",y="TempC",title="Raw Apex and Hobo Temperatures per Treatment")+
   ggsave(paste0("Output/",folder.date,"/ApexHobo_rawValues_perTreatment_plot.png"),width=11,height=7)
 # By treatment
