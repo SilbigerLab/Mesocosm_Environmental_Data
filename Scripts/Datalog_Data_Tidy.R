@@ -11,14 +11,14 @@ library(tidyverse)
 ########################
 # File Names
 ########################
-foldername<-'20200825' # folder of the day
-date<-'20200825' # today's date
+foldername<-'20200826' # folder of the day
+date<-'20200826' # today's date
 Apex_All_Datalogs<-'Apex_temp_pH_Datalog.csv' # Long-term historical data set
-Apex_1_filename<-'datalog_apex1_200823d2.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
-Apex_2_filename<-'datalog_apex2_200823d2.csv' # data from Apex 40216
-Apex_3_filename<-'datalog_apex3_200823d2.csv' # data from Apex 39952
-Apex_4_filename<-'datalog_apex4_200823d2.csv' # data from Apex 37810
-Apex_5_filename<-'datalog_apex5_200823d2.csv' # data from Apex 41239
+Apex_1_filename<-'datalog_apex1_200825d1.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
+Apex_2_filename<-'datalog_apex2_200825d1.csv' # data from Apex 40216
+Apex_3_filename<-'datalog_apex3_200825d1.csv' # data from Apex 39952
+Apex_4_filename<-'datalog_apex4_200825d1.csv' # data from Apex 37810
+Apex_5_filename<-'datalog_apex5_200825d1.csv' # data from Apex 41239
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
@@ -312,9 +312,8 @@ Apex_Full$Time <- Apex_Full$Time %>%
 #Apex_Full <- Apex_Full %>% filter(Type %in% c("Temp", "pH"))
 
 write_csv(Apex_Full,paste0('Data/Apex_DataLogs/',foldername,'/','Apex_datalog_',date,'.csv'))
-View(Apex_Full)
 
-# Read in Apex_All
+# Read in Apex_All as the time series data to which you'll add the above dataset
 Apex_All <- read_csv(paste0('Data/Apex_DataLogs/',Apex_All_Datalogs),
                        col_names = TRUE)
 
@@ -325,7 +324,6 @@ Apex_All <-
 
 Apex_All <- Apex_All %>% arrange(Date) # or
 #Apex_Full <- Apex_Full %>% arrange(Probe)
-#View(Apex_All)
 
 #write_csv(Apex_All,paste0('Data/Apex_DataLogs/Apex_Full_Datalog.csv'))
 

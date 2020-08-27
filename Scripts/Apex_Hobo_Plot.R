@@ -15,7 +15,7 @@ library(plotrix)
 
 ######################
 
-folder.date<-"20200825" # Output folder name
+folder.date<-"20200826" # Output folder name (create this new folder before continuing)
 
 ######################
 # Load Hobo Data
@@ -26,10 +26,10 @@ hobolog<-hobolog%>%
   select(-c('Intensity, ( lux)'))
 
 # start date and time of data logging
-startLog<-parse_datetime("2020-08-23 00:00:00",format = "%F %T", na=character(),
+startLog<-parse_datetime("2020-08-22 00:00:00",format = "%F %T", na=character(),
                          locale = locale(tz = ""), trim_ws = TRUE)
 # end date and time of data logging
-endLog<-parse_datetime("2020-08-25 17:51:00",format = "%F %T", na=character(),
+endLog<-parse_datetime("2020-08-26 17:45:00",format = "%F %T", na=character(),
                        locale = locale(tz = ""), trim_ws = TRUE)
 
 ###leave below the same###
@@ -179,6 +179,8 @@ my.colors<-c("#A6E1F4","#BCEE68","#BCEE68","#BCEE68","#FF3030","#FF3030","#FF303
              # hobo colors: #00A9E0 = dark blue, #006400 = dark green, #8B1A1A = dark red, #8B6914 = dark gold, #8A2BE2 = dark purple
 subset.colors<-c("#A6E1F4","#BCEE68","#FF3030","#FFC125","#BC7A8F",
                  "#00A9E0","#006400","#8B1A1A","#8B6914","#8A2BE2")
+four.colors<-c("#A6E1F4","#BCEE68","#FF3030","#FFC125",
+               "#00A9E0","#006400","#8B1A1A","#8B6914")
 
 #####################
 # Apex and hobo raw treatment plots
@@ -237,11 +239,11 @@ plot7<-ggplot(data=meanlog, aes(x=Date, y=mean, colour=Treatment))+
        title="Mean Apex and Hobo Temperatures per Source",subtitle="Without Standard Error")+
   ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perSource_noSE_plot.png"),width=11,height=7)
 graphlog<-meanlog%>%
-  unite("Source_Treatment",Source:Treatment, sep="_",remove=TRUE)
+  unite("Source_Treatment",Source:Treatment, sep="_",remove=TRUE) # combine columns Source and Treatment for the following plots
 plot8<-ggplot(data=graphlog, aes(x=Date, y=mean, colour=Source_Treatment))+
   geom_line()+
   theme_bw()+
-  scale_colour_manual(values=subset.colors)+
+  scale_colour_manual(values=four.colors)+
   labs(colour="Probe Sources and Treatment",x="Date",y="Mean TempC",
        title="Mean Apex and Hobo Temperatures per Source and Treatment",subtitle="Without Standard Error")+
   ggsave(paste0("Output/",folder.date,"/ApexHobo_meanValues_perSourceTreatment_noSE_plot.png"),width=11,height=7)
