@@ -9,15 +9,15 @@ rm(list=ls())
 library(tidyverse)
 
 # change the dated folders to match the location of your files
-foldername<-'Data/HOBO_loggers/20200826/' # the location of all your hobo files
-folder_date<-'20200826'
+foldername<-'Data/HOBO_loggers/20200817/' # the location of all your hobo files
+folder_date<-'20200817'
 Hobo_All_Logs<-'Amanda_Hobo_Logs.csv'
 
 # ONLY CHANGE THE DATE AND TIME, MAINTAINING FORMAT
 # start date and time of data logging
-startLog<-parse_datetime("2020-08-23 00:00:00",format = "%F %T", na=character(),locale = locale(tz = ""), trim_ws = TRUE)
+startLog<-parse_datetime("2020-08-06 07:00:00",format = "%F %T", na=character(),locale = locale(tz = ""), trim_ws = TRUE)
 # end date and time of data logging
-endLog<-parse_datetime("2020-08-26 17:45:00",format = "%F %T", na=character(),locale = locale(tz = ""), trim_ws = TRUE)
+endLog<-parse_datetime("2020-08-17 14:32:00",format = "%F %T", na=character(),locale = locale(tz = ""), trim_ws = TRUE)
 
 ########################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ---------------
@@ -219,7 +219,7 @@ write_csv(Hobo_All,paste0(foldername,"HOBOLog_",folder_date,".csv"))
 # Read and overwrite compilation dataset of hobo timeseries
 ##################
 
-# Read in Hobo_TS
+# Read in Hobo_TS (hobo time series data)
 Hobo_TS <- read_csv(paste0('Data/HOBO_loggers/',Hobo_All_Logs),
                      col_names = TRUE)
 
