@@ -15,17 +15,17 @@ library(plotrix)
 #####################
 # Load data
 #####################
-folder.date<- "20200830"
+folder.date<- "20200907"
 datalog<-read_csv(paste0("Data/HOBO_loggers/Amanda_Hobo_Logs.csv"),na=(c("NA", "")))
 
 #datalog<-datalog%>%
 #  select(-c('Intensity, ( lux)'))
 
 # start date and time of data logging
-startLog<-parse_datetime("2020-08-14 00:00:00",format = "%Y-%m-%d %H:%M:%S", na=character(),
+startLog<-parse_datetime("2020-08-26 00:00:00",format = "%Y-%m-%d %H:%M:%S", na=character(),
                          locale = locale(tz = ""), trim_ws = TRUE)
 # end date and time of data logging
-endLog<-parse_datetime("2020-08-30 00:00:00",format = "%Y-%m-%d %H:%M:%S", na=character(),
+endLog<-parse_datetime("2020-09-07 10:00:00",format = "%Y-%m-%d %H:%M:%S", na=character(),
                        locale = locale(tz = ""), trim_ws = TRUE)
 
 # parse date_time to POSIXct
@@ -46,11 +46,12 @@ datalog<-datalog%>%
 #####################
 # split data by treatment type
 #####################
+Kelp<-datalog%>%filter((Tank=="Hobo-Tmp-1"|Tank=="Hobo-Tmp-2"))
 Am.stable<-datalog%>% # ambient stable temperature
-  filter((Tank=="Hobo-Tmp-1"|Tank=="Hobo-Tmp-5"|Tank=="Hobo-Tmp-9"|Tank=="Hobo-Tmp-13"|Tank=="Hobo-Tmp-17"))%>%
+  filter((Tank=="Hobo-Tmp-5"|Tank=="Hobo-Tmp-9"|Tank=="Hobo-Tmp-13"|Tank=="Hobo-Tmp-17"))%>%
   mutate(Treatment="Ambient.Stable")
 El.stable<-datalog%>% # elevated stable temperature
-  filter((Tank=="Hobo-Tmp-2"|Tank=="Hobo-Tmp-6"|Tank=="Hobo-Tmp-10"|Tank=="Hobo-Tmp-14"|Tank=="Hobo-Tmp-18"))%>%
+  filter((Tank=="Hobo-Tmp-6"|Tank=="Hobo-Tmp-10"|Tank=="Hobo-Tmp-14"|Tank=="Hobo-Tmp-18"))%>%
   mutate(Treatment="Elevated.Stable")
 Am.oc<-datalog%>% # ambient temperature oscillations
   filter((Tank=="Hobo-Tmp-3"|Tank=="Hobo-Tmp-7"|Tank=="Hobo-Tmp-11"|Tank=="Hobo-Tmp-15"|Tank=="Hobo-Tmp-19"))%>%
