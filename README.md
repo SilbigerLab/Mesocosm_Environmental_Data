@@ -1,4 +1,4 @@
-# Mesocosm_Environmental_Data
+# Mesocosm Environmental Data
 
 Water quality assessment data and programming logs for continuous monitoring of the Mesocosm system.
 
