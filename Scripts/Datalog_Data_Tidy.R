@@ -11,14 +11,14 @@ library(tidyverse)
 ########################
 # File Names
 ########################
-foldername<-'20200826' # folder of the day
-date<-'20200826' # today's date
+foldername<-'202205' # folder of the day
+date<-'20220506' # today's date
 Apex_All_Datalogs<-'Apex_temp_pH_Datalog.csv' # Long-term historical data set
-Apex_1_filename<-'datalog_apex1_200825d1.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
-Apex_2_filename<-'datalog_apex2_200825d1.csv' # data from Apex 40216
-Apex_3_filename<-'datalog_apex3_200825d1.csv' # data from Apex 39952
-Apex_4_filename<-'datalog_apex4_200825d1.csv' # data from Apex 37810
-Apex_5_filename<-'datalog_apex5_200825d1.csv' # data from Apex 41239
+Apex_1_filename<-'Tank1_5.csv' # data from Apex 39106 : year, month, day, # of days to record after log start
+Apex_2_filename<-'Tank8.csv' # data from Apex 40216
+Apex_3_filename<-'Tank9_12.csv' # data from Apex 39952
+Apex_4_filename<-'Tank13_16.csv' # data from Apex 37810
+Apex_5_filename<-'Tank17_20.csv' # data from Apex 41239
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
@@ -61,15 +61,6 @@ Apex_1$Value <- Apex_1$Value %>%
 # Optional: separate date and time
 #Apex_1 <- separate(Apex_1,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
 
-# For bringing in multiple files for the same apex in the same folder (if volume of apex data requires multiple smaller files)
-If(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_1_datalog.csv')=TRUE){
-  Apex_1_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_1_datalog.csv'),
-                               col_names = TRUE)
-  Apex_1 <- 
-    union(Apex_1,Apex_1_union,by=Date)
-  Apex_1 <- Apex_1 %>% arrange(Date)
-}
-
 write_csv(Apex_1,paste0('Data/Apex_DataLogs/',foldername,'/','Apex_1_datalog.csv'))
 
 
@@ -111,14 +102,6 @@ Apex_2$Value <- Apex_2$Value %>%
 # Optional: separate date and time
 #Apex_2 <- separate(Apex_2,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
 
-# For bringing in multiple files for the same apex in the same folder (if volume of apex data requires multiple smaller files)
-If(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_2_datalog.csv')=TRUE){
-  Apex_2_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_2_datalog.csv'),
-                         col_names = TRUE)
-  Apex_2 <- 
-    union(Apex_2,Apex_2_union,by=Date)
-  Apex_2 <- Apex_2 %>% arrange(Date)
-}
 
 write_csv(Apex_2,paste0('Data/Apex_DataLogs/',foldername,'/','Apex_2_datalog.csv'))
 
@@ -161,14 +144,6 @@ Apex_3$Value <- Apex_3$Value %>%
 # Optional: separate date and time
 #Apex_3 <- separate(Apex_3,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
 
-# For bringing in multiple files for the same apex in the same folder (if volume of apex data requires multiple smaller files)
-If(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_3_datalog.csv')=TRUE){
-  Apex_3_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_3_datalog.csv'),
-                               col_names = TRUE)
-  Apex_3 <- 
-    union(Apex_3,Apex_3_union,by=Date)
-  Apex_3 <- Apex_3 %>% arrange(Date)
-}
 
 write_csv(Apex_3,paste0('Data/Apex_DataLogs/',foldername,'/','Apex_3_datalog.csv'))
 
@@ -211,15 +186,6 @@ Apex_4$Value <- Apex_4$Value %>%
 # Optional: separate date and time
 #Apex_4 <- separate(Apex_4,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
 
-# For bringing in multiple files for the same apex in the same folder (if volume of apex data requires multiple smaller files)
-If(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_4_datalog.csv')=TRUE){
-  Apex_4_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_4_datalog.csv'),
-                               col_names = TRUE)
-  Apex_4 <- 
-    union(Apex_4,Apex_4_union,by=Date)
-  Apex_4 <- Apex_4 %>% arrange(Date)
-}
-
 write_csv(Apex_4,paste0('Data/Apex_DataLogs/',foldername,'/','Apex_4_datalog.csv'))
 
 
@@ -261,14 +227,6 @@ Apex_5$Value <- Apex_5$Value %>%
 # Optional: separate date and time
 #Apex_5 <- separate(Apex_5,"Date", into=c("Date","Time"), sep=" ", remove=TRUE)
 
-# For bringing in multiple files for the same apex in the same folder (if volume of apex data requires multiple smaller files)
-If(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_5_datalog.csv')=TRUE){
-  Apex_5_union <- read_csv(paste0('Data/Apex_DataLogs/',foldername,'/','Apex_5_datalog.csv'),
-                               col_names = TRUE)
-  Apex_5 <- 
-    union(Apex_5,Apex_5_union,by=Date)
-  Apex_5 <- Apex_5 %>% arrange(Date)
-}
 
 write_csv(Apex_5,paste0('Data/Apex_DataLogs/',foldername,'/','Apex_5_datalog.csv'))
 
