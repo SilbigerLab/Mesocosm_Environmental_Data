@@ -56,30 +56,26 @@ dataLog <- data %>%
   mutate(Value = as.numeric(Value)) # Convert character strings to numeric
   
 
-fullData<-tibble(Date = as.POSIXct(NA),
-               TankID = as.character(),
-               Probe = as.character(),
-               Type = as.character(),
-               Value = as.numeric())
-
-for(i in 1:20){
-
 # create new column for Tank ID
-temp <- dataLog %>% 
+dataLog <- dataLog %>% 
   mutate(TankID = Probe)
 
 # strip away tank number from probe ID
-Tank.num <- temp$TankID
+Tank.num <- dataLog$TankID
 Tank.num <- Tank.num %>% str_replace_all(pattern = "[a-z]|[A-Z]|\\-|\\_", replacement = "")
 
-# replace Tank ID with numeric values
-temp <- temp %>% mutate(TankID = as.numeric(Tank.num))
+# replace Tank ID with Tank.num values
+dataLog <- dataLog %>% mutate(TankID = Tank.num)
 
-temp <- temp %>% 
-  filter(TankID == i)
+# label "sump" in Tank ID
+if(dataLog$TankID == ""){
+temp <- dataLog %>% 
+  filter(TankID == "") %>% 
+  mutate(TankID = "Sump")
+dataLog <- dataLog %>% 
+  filter(TankID != "") %>% 
+  full_join(temp)
+  }
 
-fullData <- fullData %>% rbind(temp)
-}
-
-
-write_csv(fullData, here(paste0(output.path,'Apex_datalog_',file.date,'.csv')))
+# write csv in output folder
+write_csv(dataLog, here(paste0(output.path,'/Apex_datalog_',file.date,'.csv')))
